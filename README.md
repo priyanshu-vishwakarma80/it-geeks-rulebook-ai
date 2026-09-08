@@ -20,7 +20,6 @@
 6. [The 25 Hard Unanswerable Questions](#-the-25-hard-unanswerable-questions)
 7. [Automated Benchmark Evaluation (100% Pass Rate)](#-automated-benchmark-evaluation)
 8. [Quick Start & Installation Guide](#-quick-start--installation-guide)
-9. [Step-by-Step Demo Video Recording Script](#-step-by-step-demo-video-recording-script)
 
 ---
 
@@ -242,36 +241,3 @@ python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --reload
 ```
 
 Open your browser to: **`http://127.0.0.1:8000`**
-
----
-
-## 🎥 Step-by-Step Demo Video Recording Script
-
-When recording your 2 to 3 minute demo video for submission:
-
-1. **Introduction (15 seconds)**:
-   - *"Hello! This is my submission for the IT Geeks placement round: 'The Rulebook That Argues With Itself'. I've built a multi-modal Q&A engine with FastAPI, featuring a 6,459-word corpus across Markdown, CSV, and PDF, with side-by-side citations, contradiction detection, and silence admission."*
-
-2. **Test 1: Normal Answered Query with Side-by-Side Citations (30 seconds)**:
-   - Click the prompt chip: *"What letter grades are used and what grade points correspond to them?"*
-   - Show how the Left Pane displays the authoritative verdict (`ANSWERED WITH CITATIONS`), while the Right Pane displays the exact section reference (`Section 3.1`), source document (`academic_regulations.md`), and the similarity score. Point out that citations are displayed side-by-side and never hidden behind clicks.
-
-3. **Test 2: Contradiction Detection (45 seconds)**:
-   - Click the prompt chip: *"What happens if my attendance is 68% due to hospitalization?"*
-   - Show the amber **Regulatory Conflict Detected** badge. Highlight the breakdown:
-     - Section 4.2 says 75% attendance is strict with zero exceptions.
-     - Section 9.1 grants a 10% medical exemption (65% threshold).
-     - Section 14.3 gives the Dean unconditional discretion down to 50%.
-   - Also test Contradiction 2 (Course refund: 80% vs 0% after Day 7) or Contradiction 3 (10 PM curfew vs 24/7 lab access).
-
-4. **Test 3: Silence Admission / Hallucination Prevention (30 seconds)**:
-   - Click the prompt chip: *"What happens if I miss the exam because of my sibling's wedding?"*
-   - Show the rose **Not Covered in Rulebook** badge. Explain that instead of hallucinating, the engine cleanly admits the university rulebook is silent regarding family weddings and only covers medical hospitalization.
-
-5. **Test 4: Live Automated Benchmark Suite (30 seconds)**:
-   - Switch to the **"Benchmark Suite"** tab.
-   - Click **"Run Complete Benchmark"**.
-   - Watch the progress bar execute all 39 tests live, showing **100% Accuracy (39/39 Passed)** across Contradictions, Silence, and Answered questions.
-
-6. **Conclusion (10 seconds)**:
-   - *"The codebase is fully tested, modular, and ready for deployment. Thank you!"*
