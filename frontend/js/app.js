@@ -1,4 +1,4 @@
-// The Rulebook That Argues With Itself - Frontend Application
+// Apex Rulebook Intelligence - Frontend Application
 
 let allChunks = [];
 let testSuite = null;
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function switchTab(tabId) {
   document.querySelectorAll('.view-panel').forEach(el => el.classList.add('hidden'));
   document.querySelectorAll('.tab-btn').forEach(el => {
-    el.classList.remove('bg-cyan-600', 'text-white', 'font-semibold');
+    el.classList.remove('bg-gradient-to-r', 'from-cyan-600', 'to-blue-600', 'text-white', 'font-bold', 'shadow-md');
     el.classList.add('text-slate-400');
   });
 
@@ -21,7 +21,7 @@ function switchTab(tabId) {
   const activeBtn = document.getElementById(`tab-btn-${tabId}`);
   if (activeView) activeView.classList.remove('hidden');
   if (activeBtn) {
-    activeBtn.classList.add('bg-cyan-600', 'text-white', 'font-semibold');
+    activeBtn.classList.add('bg-gradient-to-r', 'from-cyan-600', 'to-blue-600', 'text-white', 'font-bold', 'shadow-md');
     activeBtn.classList.remove('text-slate-400');
   }
 }
@@ -32,66 +32,51 @@ async function loadCorpusStats() {
     const res = await fetch('/corpus');
     if (!res.ok) return;
     const data = await res.json();
-    document.getElementById('stat-words').textContent = `${data.total_words.toLocaleString()} Words`;
+    document.getElementById('stat-words').textContent = `${data.total_words.toLocaleString()} Words Indexed`;
     document.getElementById('total-chunks-span').textContent = data.total_chunks;
   } catch (err) {
     console.error("Error loading corpus stats:", err);
   }
 }
 
-// Fetch Test Suite and Populate Demo Cards
+// Fetch Test Suite and Populate Policy Gap Explorer
 async function loadTestSuite() {
   try {
     const res = await fetch('/test-suite');
     if (!res.ok) return;
     testSuite = await res.json();
 
-    // Populate Unanswerable Demo Grid (25 items)
-    const unansGrid = document.getElementById('demo-unanswerable-grid');
-    unansGrid.innerHTML = '';
-    testSuite.unanswerable_questions.forEach(item => {
-      const card = document.createElement('div');
-      card.className = "demo-card border-rose-900/40 bg-rose-950/20 hover:bg-rose-950/40";
-      card.innerHTML = `
-        <div>
-          <div class="flex items-center justify-between">
-            <span class="badge-tag text-rose-400">${item.id}</span>
-            <span class="text-[10px] text-slate-500">${item.category}</span>
+    // Populate Policy Gaps Grid (25 items)
+    const gapsGrid = document.getElementById('gaps-grid');
+    if (gapsGrid && testSuite.unanswerable_questions) {
+      gapsGrid.innerHTML = '';
+      testSuite.unanswerable_questions.forEach(item => {
+        const card = document.createElement('div');
+        card.className = "p-5 rounded-2xl bg-slate-950/80 border border-rose-900/50 hover:border-rose-700/80 transition-all flex flex-col justify-between";
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-850">${item.id}</span>
+              <span class="text-[10px] text-slate-500 font-mono">${item.category}</span>
+            </div>
+            <h4 class="text-xs text-slate-200 font-bold leading-snug">${item.question}</h4>
+            <p class="text-[11px] text-slate-400 mt-2 italic font-serif leading-relaxed">"${item.reason}"</p>
           </div>
-          <p class="text-xs text-slate-200 mt-1 font-medium">${item.question}</p>
-          <p class="text-[10px] text-slate-400 mt-1 italic">${item.reason}</p>
-        </div>
-        <button onclick="runDemoQuery('${escapeQuotes(item.question)}')" class="demo-btn text-rose-300 bg-rose-900/30 hover:bg-rose-800/50">
-          <i class="fa-solid fa-play text-[10px]"></i> Test Silence
-        </button>
-      `;
-      unansGrid.appendChild(card);
-    });
-
-    // Populate Positive Queries Grid (8 items)
-    const posGrid = document.getElementById('demo-positive-grid');
-    posGrid.innerHTML = '';
-    testSuite.positive_queries.forEach(item => {
-      const card = document.createElement('div');
-      card.className = "demo-card border-emerald-900/40 bg-emerald-950/20 hover:bg-emerald-950/40";
-      card.innerHTML = `
-        <div>
-          <span class="badge-tag text-emerald-400">${item.id}</span>
-          <p class="text-xs text-slate-200 mt-1 font-medium">${item.query}</p>
-        </div>
-        <button onclick="runDemoQuery('${escapeQuotes(item.query)}')" class="demo-btn text-emerald-300 bg-emerald-900/30 hover:bg-emerald-800/50">
-          <i class="fa-solid fa-play text-[10px]"></i> Query Rule
-        </button>
-      `;
-      posGrid.appendChild(card);
-    });
+          <button onclick="runDirectQuery('${escapeQuotes(item.question)}')" class="mt-4 w-full py-2 rounded-xl bg-rose-950/50 hover:bg-rose-900/60 text-rose-300 text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+            <span>Verify Policy Gap</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        `;
+        gapsGrid.appendChild(card);
+      });
+    }
 
   } catch (err) {
     console.error("Error loading test suite:", err);
   }
 }
 
-// Fetch All Chunks for Corpus Explorer
+// Fetch All Chunks for Corpus Viewer
 async function loadAllChunks() {
   try {
     const res = await fetch('/corpus/chunks');
@@ -108,32 +93,32 @@ function renderChunks(chunks) {
   const container = document.getElementById('chunks-container');
   container.innerHTML = '';
   if (!chunks.length) {
-    container.innerHTML = `<div class="p-4 text-center text-xs text-slate-500">No matching chunks found.</div>`;
+    container.innerHTML = `<div class="p-8 text-center text-xs text-slate-500">No matching clauses found.</div>`;
     return;
   }
 
   chunks.forEach(c => {
     const item = document.createElement('div');
-    item.className = "p-3 rounded-lg bg-slate-950 border border-slate-800/80 text-xs";
+    item.className = "p-3.5 rounded-xl bg-slate-950 border border-slate-800/80 text-xs hover:border-slate-700 transition-all";
     
     let formatBadge = '';
     if (c.doc_format === 'markdown') {
-      formatBadge = `<span class="px-1.5 py-0.5 rounded bg-blue-950 text-blue-400 border border-blue-900 text-[10px] font-mono">MD</span>`;
+      formatBadge = `<span class="px-2 py-0.5 rounded bg-blue-950 text-blue-400 border border-blue-900 text-[10px] font-mono font-bold">MD</span>`;
     } else if (c.doc_format === 'csv_table') {
-      formatBadge = `<span class="px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-900 text-[10px] font-mono">CSV</span>`;
+      formatBadge = `<span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-900 text-[10px] font-mono font-bold">CSV</span>`;
     } else {
-      formatBadge = `<span class="px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-900 text-[10px] font-mono">PDF</span>`;
+      formatBadge = `<span class="px-2 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-900 text-[10px] font-mono font-bold">PDF</span>`;
     }
 
     item.innerHTML = `
-      <div class="flex items-center justify-between mb-1">
-        <div class="flex items-center gap-2">
+      <div class="flex items-center justify-between mb-1.5">
+        <div class="flex items-center gap-2.5">
           ${formatBadge}
           <span class="font-bold text-slate-200">${c.section}</span>
         </div>
         <span class="text-[10px] font-mono text-slate-500">${c.chunk_id} • ${c.word_count} words</span>
       </div>
-      <p class="text-[11px] text-slate-400 font-mono line-clamp-2 mt-1">${c.text.substring(0, 180)}...</p>
+      <p class="text-[11px] text-slate-400 font-mono line-clamp-2 leading-relaxed">${c.text.substring(0, 190)}...</p>
     `;
     container.appendChild(item);
   });
@@ -153,14 +138,14 @@ function filterChunks(query) {
   renderChunks(filtered);
 }
 
-// Quick Pill Setter
+// Quick Pill Query Handler
 function setQuery(text) {
   document.getElementById('query-input').value = text;
   document.getElementById('ask-form').dispatchEvent(new Event('submit'));
 }
 
-// 1-Click Demo Trigger from Demo Tab
-function runDemoQuery(text) {
+// Direct Trigger from Conflict Matrix or Policy Gaps
+function runDirectQuery(text) {
   switchTab('qa');
   document.getElementById('query-input').value = text;
   document.getElementById('ask-form').dispatchEvent(new Event('submit'));
@@ -226,13 +211,13 @@ function renderAnswerResponse(data) {
   // Reset conditional boxes
   conflictBox.classList.add('hidden');
   silenceBox.classList.add('hidden');
-  answerCard.className = "bg-slate-900 border rounded-2xl p-6 shadow-xl relative overflow-hidden";
+  answerCard.className = "bg-gradient-to-b from-slate-900 to-slate-950 border rounded-3xl p-6 shadow-2xl relative overflow-hidden transition-all";
 
   // Customize based on 3 Response Types:
   if (data.type === 'conflict') {
-    answerCard.classList.add('border-amber-700/80', 'ring-1', 'ring-amber-500/30');
-    typeBadge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 bg-amber-950 text-amber-300 border border-amber-800";
-    typeBadge.innerHTML = `<i class="fa-solid fa-triangle-exclamation text-amber-400"></i> Regulatory Conflict Detected`;
+    answerCard.classList.add('border-amber-600/80', 'ring-1', 'ring-amber-500/30');
+    typeBadge.className = "px-3.5 py-1.5 rounded-xl text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 bg-amber-950 text-amber-300 border border-amber-800";
+    typeBadge.innerHTML = `<i class="fa-solid fa-triangle-exclamation text-amber-400"></i> Regulatory Conflict Identified`;
 
     if (data.conflict) {
       conflictBox.classList.remove('hidden');
@@ -243,15 +228,15 @@ function renderAnswerResponse(data) {
       clausesGrid.innerHTML = '';
       data.conflict.clauses.forEach((c, idx) => {
         const cCard = document.createElement('div');
-        cCard.className = "p-3 rounded-lg bg-slate-950/80 border border-amber-800/60 flex flex-col justify-between";
+        cCard.className = "p-4 rounded-xl bg-slate-950/90 border border-amber-800/70 flex flex-col justify-between";
         cCard.innerHTML = `
           <div>
-            <div class="flex items-center justify-between text-[11px] font-mono text-amber-400 mb-1">
+            <div class="flex items-center justify-between text-[11px] font-mono text-amber-400 mb-1.5">
               <span>Clause ${idx + 1}</span>
               <span class="text-slate-400">${c.document}</span>
             </div>
-            <strong class="text-xs text-slate-200 block mb-1">${c.section}</strong>
-            <blockquote class="text-[11px] text-slate-300 italic border-l-2 border-amber-500 pl-2 mt-1">"${c.quote}"</blockquote>
+            <strong class="text-xs text-slate-100 block mb-1.5">${c.section}</strong>
+            <blockquote class="text-[11px] text-slate-300 font-serif italic border-l-2 border-amber-500 pl-2.5 mt-1 leading-relaxed">"${c.quote}"</blockquote>
           </div>
         `;
         clausesGrid.appendChild(cCard);
@@ -259,9 +244,9 @@ function renderAnswerResponse(data) {
     }
 
   } else if (data.type === 'not_covered') {
-    answerCard.classList.add('border-rose-800/80', 'ring-1', 'ring-rose-500/20');
-    typeBadge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 bg-rose-950 text-rose-300 border border-rose-800";
-    typeBadge.innerHTML = `<i class="fa-solid fa-circle-xmark text-rose-400"></i> Not Covered in Rulebook`;
+    answerCard.classList.add('border-rose-600/80', 'ring-1', 'ring-rose-500/30');
+    typeBadge.className = "px-3.5 py-1.5 rounded-xl text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 bg-rose-950 text-rose-300 border border-rose-800";
+    typeBadge.innerHTML = `<i class="fa-solid fa-shield-halved text-rose-400"></i> Policy Gap / Corpus Silent`;
 
     silenceBox.classList.remove('hidden');
     document.getElementById('silence-reason').textContent = data.reasoning || "The official documents do not stipulate regulations for this specific topic.";
@@ -269,18 +254,18 @@ function renderAnswerResponse(data) {
   } else {
     // ANSWERED
     answerCard.classList.add('border-slate-800');
-    typeBadge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 bg-emerald-950 text-emerald-300 border border-emerald-800";
-    typeBadge.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400"></i> Answered with Citations`;
+    typeBadge.className = "px-3.5 py-1.5 rounded-xl text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 bg-emerald-950 text-emerald-300 border border-emerald-800";
+    typeBadge.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400"></i> Verified Regulatory Citation`;
   }
 
   // Render Right-Pane Citations Feed
   citationsList.innerHTML = '';
   if (!data.citations || data.citations.length === 0) {
     citationsList.innerHTML = `
-      <div class="p-6 rounded-xl bg-slate-950 border border-slate-800/80 text-center">
+      <div class="p-8 rounded-2xl bg-slate-950/80 border border-slate-800 text-center">
         <i class="fa-solid fa-database text-slate-600 text-2xl mb-2"></i>
-        <p class="text-xs text-slate-400">Zero direct textual citations matched.</p>
-        <p class="text-[11px] text-slate-500 mt-0.5">Corpus is silent on this topic.</p>
+        <p class="text-xs text-slate-400 font-medium">Zero direct regulatory citations matched.</p>
+        <p class="text-[11px] text-slate-500 mt-1">Rulebook corpus contains no governing clause.</p>
       </div>
     `;
     return;
@@ -297,20 +282,20 @@ function renderAnswerResponse(data) {
     const simScore = Math.round(cit.similarity_score * 100);
 
     card.innerHTML = `
-      <div class="flex items-center justify-between mb-2">
+      <div class="flex items-center justify-between mb-2.5">
         <span class="text-[11px] font-mono ${docColor} font-bold flex items-center gap-1.5">
           <i class="fa-regular fa-file-lines"></i>
           <span>${cit.document}</span>
         </span>
-        <div class="flex items-center gap-1.5">
-          <span class="text-[10px] font-mono text-cyan-400 font-bold">${simScore}% match</span>
-          <div class="w-12 h-1.5 bg-slate-800 rounded-full overflow-hidden">
-            <div class="h-full bg-cyan-500" style="width: ${simScore}%"></div>
+        <div class="flex items-center gap-2">
+          <span class="text-[11px] font-mono text-cyan-400 font-bold">${simScore}% match</span>
+          <div class="w-14 h-1.5 bg-slate-800 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-cyan-500 to-emerald-400" style="width: ${simScore}%"></div>
           </div>
         </div>
       </div>
-      <h4 class="text-xs font-bold text-slate-200 mb-1.5">${cit.section}</h4>
-      <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800/80 text-[11px] text-slate-300 font-serif leading-relaxed">
+      <h4 class="text-xs font-bold text-slate-100 mb-2">${cit.section}</h4>
+      <div class="p-3 rounded-xl bg-slate-950 border border-slate-800/80 text-[11px] text-slate-300 font-serif leading-relaxed">
         "${cit.text}"
       </div>
     `;
@@ -336,7 +321,7 @@ async function runLiveBenchmark() {
     progressText.textContent = '60%';
 
     const res = await fetch('/eval/run', { method: 'POST' });
-    if (!res.ok) throw new Error("Benchmark failed to run");
+    if (!res.ok) throw new Error("Audit failed to run");
     const data = await res.json();
 
     progressBar.style.width = '100%';
@@ -355,21 +340,21 @@ async function runLiveBenchmark() {
       tr.className = "hover:bg-slate-900/60";
 
       let statusBadge = r.passed
-        ? `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800"><i class="fa-solid fa-check mr-1"></i>PASSED</span>`
-        : `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800"><i class="fa-solid fa-xmark mr-1"></i>FAILED</span>`;
+        ? `<span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800"><i class="fa-solid fa-check mr-1"></i>PASSED</span>`
+        : `<span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800"><i class="fa-solid fa-xmark mr-1"></i>FAILED</span>`;
 
       tr.innerHTML = `
-        <td class="py-2.5 px-4 font-mono font-bold text-slate-300">${r.test_id}</td>
-        <td class="py-2.5 px-4 text-slate-200 font-medium max-w-xs truncate" title="${r.query}">${r.query}</td>
-        <td class="py-2.5 px-4 font-mono text-cyan-400">${r.expected_type.toUpperCase()}</td>
-        <td class="py-2.5 px-4 font-mono ${r.passed ? 'text-emerald-400' : 'text-rose-400'}">${r.predicted_type.toUpperCase()}</td>
-        <td class="py-2.5 px-4">${statusBadge}</td>
+        <td class="py-3 px-4 font-mono font-bold text-slate-300">${r.test_id}</td>
+        <td class="py-3 px-4 text-slate-200 font-medium max-w-xs truncate" title="${r.query}">${r.query}</td>
+        <td class="py-3 px-4 font-mono text-cyan-400 font-semibold">${r.expected_type.toUpperCase()}</td>
+        <td class="py-3 px-4 font-mono ${r.passed ? 'text-emerald-400' : 'text-rose-400'} font-semibold">${r.predicted_type.toUpperCase()}</td>
+        <td class="py-3 px-4">${statusBadge}</td>
       `;
       tableBody.appendChild(tr);
     });
 
   } catch (err) {
-    alert(`Benchmark Error: ${err.message}`);
+    alert(`Audit Error: ${err.message}`);
   } finally {
     btn.disabled = false;
     setTimeout(() => {
