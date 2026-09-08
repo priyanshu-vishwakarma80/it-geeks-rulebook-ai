@@ -12,18 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Tab Navigation
 function switchTab(tabId) {
   document.querySelectorAll('.view-panel').forEach(el => el.classList.add('hidden'));
-  document.querySelectorAll('.tab-btn').forEach(el => {
-    el.classList.remove('bg-gradient-to-r', 'from-cyan-600', 'to-blue-600', 'text-white', 'font-bold', 'shadow-md');
-    el.classList.add('text-slate-400');
-  });
+  document.querySelectorAll('.nav-tab').forEach(el => el.classList.remove('active'));
 
   const activeView = document.getElementById(`view-${tabId}`);
   const activeBtn = document.getElementById(`tab-btn-${tabId}`);
   if (activeView) activeView.classList.remove('hidden');
-  if (activeBtn) {
-    activeBtn.classList.add('bg-gradient-to-r', 'from-cyan-600', 'to-blue-600', 'text-white', 'font-bold', 'shadow-md');
-    activeBtn.classList.remove('text-slate-400');
-  }
+  if (activeBtn) activeBtn.classList.add('active');
 }
 
 // Fetch Corpus Stats
@@ -52,17 +46,17 @@ async function loadTestSuite() {
       gapsGrid.innerHTML = '';
       testSuite.unanswerable_questions.forEach(item => {
         const card = document.createElement('div');
-        card.className = "p-5 rounded-2xl bg-slate-950/80 border border-rose-900/50 hover:border-rose-700/80 transition-all flex flex-col justify-between";
+        card.className = "p-5 rounded-2xl bg-slate-950/80 border border-rose-900/40 hover:border-rose-600/80 transition-all flex flex-col justify-between shadow-lg";
         card.innerHTML = `
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-850">${item.id}</span>
-              <span class="text-[10px] text-slate-500 font-mono">${item.category}</span>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] font-mono font-bold px-2.5 py-0.5 rounded-md bg-rose-950 text-rose-400 border border-rose-900">${item.id}</span>
+              <span class="text-[10px] text-slate-400 font-mono">${item.category}</span>
             </div>
-            <h4 class="text-xs text-slate-200 font-bold leading-snug">${item.question}</h4>
-            <p class="text-[11px] text-slate-400 mt-2 italic font-serif leading-relaxed">"${item.reason}"</p>
+            <h4 class="text-xs sm:text-sm text-slate-100 font-bold leading-snug">${item.question}</h4>
+            <p class="text-[11px] text-slate-400 mt-2.5 italic font-serif leading-relaxed">"${item.reason}"</p>
           </div>
-          <button onclick="runDirectQuery('${escapeQuotes(item.question)}')" class="mt-4 w-full py-2 rounded-xl bg-rose-950/50 hover:bg-rose-900/60 text-rose-300 text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+          <button onclick="runDirectQuery('${escapeQuotes(item.question)}')" class="mt-5 w-full py-2.5 rounded-xl bg-rose-950/40 hover:bg-rose-900/60 text-rose-300 text-xs font-semibold flex items-center justify-center gap-2 transition-all border border-rose-900/40">
             <span>Verify Policy Gap</span>
             <i class="fa-solid fa-arrow-right text-[10px]"></i>
           </button>
@@ -99,7 +93,7 @@ function renderChunks(chunks) {
 
   chunks.forEach(c => {
     const item = document.createElement('div');
-    item.className = "p-3.5 rounded-xl bg-slate-950 border border-slate-800/80 text-xs hover:border-slate-700 transition-all";
+    item.className = "p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs hover:border-slate-700 transition-all";
     
     let formatBadge = '';
     if (c.doc_format === 'markdown') {
@@ -111,14 +105,14 @@ function renderChunks(chunks) {
     }
 
     item.innerHTML = `
-      <div class="flex items-center justify-between mb-1.5">
+      <div class="flex items-center justify-between mb-2">
         <div class="flex items-center gap-2.5">
           ${formatBadge}
-          <span class="font-bold text-slate-200">${c.section}</span>
+          <span class="font-bold text-slate-200 text-xs sm:text-sm">${c.section}</span>
         </div>
         <span class="text-[10px] font-mono text-slate-500">${c.chunk_id} • ${c.word_count} words</span>
       </div>
-      <p class="text-[11px] text-slate-400 font-mono line-clamp-2 leading-relaxed">${c.text.substring(0, 190)}...</p>
+      <p class="text-[11px] text-slate-300 font-mono line-clamp-2 leading-relaxed">${c.text.substring(0, 200)}...</p>
     `;
     container.appendChild(item);
   });
@@ -211,12 +205,12 @@ function renderAnswerResponse(data) {
   // Reset conditional boxes
   conflictBox.classList.add('hidden');
   silenceBox.classList.add('hidden');
-  answerCard.className = "bg-gradient-to-b from-slate-900 to-slate-950 border rounded-3xl p-6 shadow-2xl relative overflow-hidden transition-all";
+  answerCard.className = "glass-panel p-8 relative overflow-hidden transition-all";
 
   // Customize based on 3 Response Types:
   if (data.type === 'conflict') {
-    answerCard.classList.add('border-amber-600/80', 'ring-1', 'ring-amber-500/30');
-    typeBadge.className = "px-3.5 py-1.5 rounded-xl text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 bg-amber-950 text-amber-300 border border-amber-800";
+    answerCard.classList.add('border-amber-600', 'ring-1', 'ring-amber-500/40');
+    typeBadge.className = "px-4 py-2 rounded-xl text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 bg-amber-950 text-amber-300 border border-amber-800";
     typeBadge.innerHTML = `<i class="fa-solid fa-triangle-exclamation text-amber-400"></i> Regulatory Conflict Identified`;
 
     if (data.conflict) {
@@ -244,8 +238,8 @@ function renderAnswerResponse(data) {
     }
 
   } else if (data.type === 'not_covered') {
-    answerCard.classList.add('border-rose-600/80', 'ring-1', 'ring-rose-500/30');
-    typeBadge.className = "px-3.5 py-1.5 rounded-xl text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 bg-rose-950 text-rose-300 border border-rose-800";
+    answerCard.classList.add('border-rose-600', 'ring-1', 'ring-rose-500/40');
+    typeBadge.className = "px-4 py-2 rounded-xl text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 bg-rose-950 text-rose-300 border border-rose-800";
     typeBadge.innerHTML = `<i class="fa-solid fa-shield-halved text-rose-400"></i> Policy Gap / Corpus Silent`;
 
     silenceBox.classList.remove('hidden');
@@ -254,7 +248,7 @@ function renderAnswerResponse(data) {
   } else {
     // ANSWERED
     answerCard.classList.add('border-slate-800');
-    typeBadge.className = "px-3.5 py-1.5 rounded-xl text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 bg-emerald-950 text-emerald-300 border border-emerald-800";
+    typeBadge.className = "px-4 py-2 rounded-xl text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 bg-emerald-950 text-emerald-300 border border-emerald-800";
     typeBadge.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400"></i> Verified Regulatory Citation`;
   }
 
@@ -282,20 +276,20 @@ function renderAnswerResponse(data) {
     const simScore = Math.round(cit.similarity_score * 100);
 
     card.innerHTML = `
-      <div class="flex items-center justify-between mb-2.5">
+      <div class="flex items-center justify-between mb-3">
         <span class="text-[11px] font-mono ${docColor} font-bold flex items-center gap-1.5">
           <i class="fa-regular fa-file-lines"></i>
           <span>${cit.document}</span>
         </span>
         <div class="flex items-center gap-2">
-          <span class="text-[11px] font-mono text-cyan-400 font-bold">${simScore}% match</span>
-          <div class="w-14 h-1.5 bg-slate-800 rounded-full overflow-hidden">
-            <div class="h-full bg-gradient-to-r from-cyan-500 to-emerald-400" style="width: ${simScore}%"></div>
+          <span class="text-[11px] font-mono text-sky-400 font-bold">${simScore}% match</span>
+          <div class="w-16 h-2 bg-slate-800 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-sky-500 to-emerald-400" style="width: ${simScore}%"></div>
           </div>
         </div>
       </div>
-      <h4 class="text-xs font-bold text-slate-100 mb-2">${cit.section}</h4>
-      <div class="p-3 rounded-xl bg-slate-950 border border-slate-800/80 text-[11px] text-slate-300 font-serif leading-relaxed">
+      <h4 class="text-xs sm:text-sm font-bold text-slate-100 mb-2">${cit.section}</h4>
+      <div class="p-3.5 rounded-xl bg-slate-950/90 border border-slate-800/80 text-xs text-slate-300 font-serif leading-relaxed">
         "${cit.text}"
       </div>
     `;
@@ -344,11 +338,11 @@ async function runLiveBenchmark() {
         : `<span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800"><i class="fa-solid fa-xmark mr-1"></i>FAILED</span>`;
 
       tr.innerHTML = `
-        <td class="py-3 px-4 font-mono font-bold text-slate-300">${r.test_id}</td>
-        <td class="py-3 px-4 text-slate-200 font-medium max-w-xs truncate" title="${r.query}">${r.query}</td>
-        <td class="py-3 px-4 font-mono text-cyan-400 font-semibold">${r.expected_type.toUpperCase()}</td>
-        <td class="py-3 px-4 font-mono ${r.passed ? 'text-emerald-400' : 'text-rose-400'} font-semibold">${r.predicted_type.toUpperCase()}</td>
-        <td class="py-3 px-4">${statusBadge}</td>
+        <td class="py-3.5 px-5 font-mono font-bold text-slate-300">${r.test_id}</td>
+        <td class="py-3.5 px-5 text-slate-200 font-medium max-w-xs truncate" title="${r.query}">${r.query}</td>
+        <td class="py-3.5 px-5 font-mono text-sky-400 font-semibold">${r.expected_type.toUpperCase()}</td>
+        <td class="py-3.5 px-5 font-mono ${r.passed ? 'text-emerald-400' : 'text-rose-400'} font-semibold">${r.predicted_type.toUpperCase()}</td>
+        <td class="py-3.5 px-5">${statusBadge}</td>
       `;
       tableBody.appendChild(tr);
     });

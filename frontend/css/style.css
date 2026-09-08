@@ -1,140 +1,158 @@
-/* Modern Aesthetics for The Rulebook That Argues With Itself */
+/* Modern, Spacious, High-Contrast UI for Apex Rulebook Intelligence */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #040711;
+  --bg-surface: #0a0f1d;
+  --bg-card: #0e1628;
+  --border-subtle: #1e293b;
+  --border-focus: #0ea5e9;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+}
 
 body {
-  background-color: #060a13;
-  color: #f1f5f9;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
 }
 
-/* Quick Query Pill Chips */
-.pill-chip {
-  padding: 0.35rem 0.75rem;
-  border-radius: 9999px;
-  font-size: 0.73rem;
-  font-weight: 500;
+/* Tab Navigation Buttons */
+.nav-tab {
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
   display: inline-flex;
   align-items: center;
+  gap: 0.5rem;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  border-width: 1px;
+  border: 1px solid transparent;
 }
 
-.pill-amber {
-  background-color: rgba(120, 53, 15, 0.2);
-  border-color: rgba(180, 83, 9, 0.5);
-  color: #fde68a;
-}
-.pill-amber:hover {
-  background-color: rgba(120, 53, 15, 0.4);
-  border-color: #f59e0b;
-  transform: translateY(-1.5px);
-  box-shadow: 0 4px 12px -2px rgba(245, 158, 11, 0.25);
+.nav-tab:hover {
+  color: #ffffff;
+  background-color: rgba(30, 41, 59, 0.7);
 }
 
-.pill-rose {
-  background-color: rgba(136, 19, 55, 0.2);
-  border-color: rgba(190, 18, 60, 0.5);
-  color: #fecdd3;
-}
-.pill-rose:hover {
-  background-color: rgba(136, 19, 55, 0.4);
-  border-color: #f43f5e;
-  transform: translateY(-1.5px);
-  box-shadow: 0 4px 12px -2px rgba(244, 63, 94, 0.25);
-}
-
-.pill-cyan {
-  background-color: rgba(8, 51, 68, 0.3);
-  border-color: rgba(14, 116, 144, 0.5);
-  color: #bae6fd;
-}
-.pill-cyan:hover {
-  background-color: rgba(8, 51, 68, 0.5);
-  border-color: #06b6d4;
-  transform: translateY(-1.5px);
-  box-shadow: 0 4px 12px -2px rgba(6, 182, 212, 0.25);
-}
-
-/* Demo Cards */
-.demo-card {
-  padding: 1.25rem;
-  border-radius: 1rem;
-  border-width: 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: all 0.25s ease;
-  backdrop-filter: blur(8px);
-}
-
-.demo-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
-}
-
-.badge-tag {
-  font-size: 0.68rem;
-  font-family: 'JetBrains Mono', monospace;
+.nav-tab.active {
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+  color: #ffffff;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  box-shadow: 0 4px 14px -2px rgba(2, 132, 199, 0.4);
+  border-color: rgba(56, 189, 248, 0.3);
 }
 
-.demo-btn {
-  margin-top: 1rem;
-  padding: 0.5rem 0.85rem;
-  border-radius: 0.75rem;
-  font-size: 0.75rem;
-  font-weight: 700;
+/* Quick Query Pill Chips with generous spacing */
+.query-chip {
+  padding: 0.55rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   transition: all 0.2s ease;
-  width: 100%;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border: 1px solid transparent;
+  line-height: 1.25;
 }
 
-.demo-btn:hover {
-  filter: brightness(1.2);
-  transform: translateY(-1px);
+.query-chip:hover {
+  transform: translateY(-2px);
 }
 
-/* Metric Cards */
-.metric-card {
-  padding: 1.25rem;
-  border-radius: 1rem;
-  background: linear-gradient(180deg, #0b1120 0%, #030712 100%);
-  border: 1px solid #1e293b;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+.query-chip-amber {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.35);
+  color: #fde68a;
+}
+.query-chip-amber:hover {
+  background: rgba(245, 158, 11, 0.22);
+  border-color: #f59e0b;
+  box-shadow: 0 6px 16px -3px rgba(245, 158, 11, 0.3);
 }
 
-/* Side-by-Side Citation Card */
+.query-chip-rose {
+  background: rgba(244, 63, 94, 0.12);
+  border-color: rgba(244, 63, 94, 0.35);
+  color: #fecdd3;
+}
+.query-chip-rose:hover {
+  background: rgba(244, 63, 94, 0.22);
+  border-color: #f43f5e;
+  box-shadow: 0 6px 16px -3px rgba(244, 63, 94, 0.3);
+}
+
+.query-chip-cyan {
+  background: rgba(14, 165, 233, 0.12);
+  border-color: rgba(14, 165, 233, 0.35);
+  color: #bae6fd;
+}
+.query-chip-cyan:hover {
+  background: rgba(14, 165, 233, 0.22);
+  border-color: #0ea5e9;
+  box-shadow: 0 6px 16px -3px rgba(14, 165, 233, 0.3);
+}
+
+/* Card Styling with Generous Breathing Room */
+.glass-panel {
+  background: linear-gradient(180deg, rgba(14, 22, 40, 0.85) 0%, rgba(10, 15, 29, 0.95) 100%);
+  border: 1px solid rgba(51, 65, 85, 0.7);
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+}
+
 .citation-card {
-  border-radius: 1rem;
-  background: linear-gradient(180deg, #0b1120 0%, #060a13 100%);
+  background: linear-gradient(180deg, #0d1527 0%, #080d19 100%);
   border: 1px solid #1e293b;
-  padding: 1.25rem;
+  border-radius: 1.15rem;
+  padding: 1.4rem;
   transition: all 0.2s ease;
-  position: relative;
-  overflow: hidden;
 }
 
 .citation-card:hover {
-  border-color: #06b6d4;
-  box-shadow: 0 6px 20px -3px rgba(6, 182, 212, 0.15);
-  transform: translateX(2px);
+  border-color: #0ea5e9;
+  box-shadow: 0 8px 24px -4px rgba(14, 165, 233, 0.2);
+  transform: translateX(3px);
 }
 
-/* Custom Scrollbars */
+/* Conflict Interactive Card */
+.conflict-card {
+  background: linear-gradient(180deg, #10192d 0%, #0a1020 100%);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 1.35rem;
+  padding: 1.75rem;
+  transition: all 0.25s ease;
+}
+
+.conflict-card:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 12px 30px -5px rgba(245, 158, 11, 0.15);
+}
+
+/* Metric Display Cards */
+.metric-box {
+  background: linear-gradient(180deg, #0e172a 0%, #060a14 100%);
+  border: 1px solid #1e293b;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Sleek Scrollbars */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #060a13;
+  background: #040711;
 }
 
 ::-webkit-scrollbar-thumb {
