@@ -3,6 +3,14 @@
 let allChunks = [];
 let testSuite = null;
 
+const SCENARIOS = {
+  attendance: "What happens if my attendance is 68% due to hospitalization?",
+  refund: "If I withdraw from a course on day 10 of the semester, what refund percentage do I get?",
+  curfew: "Can final year students work in the departmental research labs after 10 PM?",
+  wedding: "What happens if I miss the end-semester examination because of my sibling's wedding?",
+  grading: "What letter grades are used and what grade points correspond to them?"
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   loadCorpusStats();
   loadTestSuite();
@@ -12,7 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // Tab Navigation
 function switchTab(tabId) {
   // Hide all view panels
-  document.querySelectorAll('.view-panel').forEach(el => el.classList.add('hidden'));
+  document.querySelectorAll('.view-panel').forEach(el => {
+    el.style.display = 'none';
+    el.classList.add('hidden');
+  });
   
   // Remove active state from all tab buttons
   document.querySelectorAll('.tab-button').forEach(el => el.classList.remove('active'));
@@ -20,7 +31,10 @@ function switchTab(tabId) {
   // Show selected panel and mark button as active
   const activeView = document.getElementById(`view-${tabId}`);
   const activeBtn = document.getElementById(`tab-btn-${tabId}`);
-  if (activeView) activeView.classList.remove('hidden');
+  if (activeView) {
+    activeView.style.display = 'flex';
+    activeView.classList.remove('hidden');
+  }
   if (activeBtn) activeBtn.classList.add('active');
 
   // Scroll smoothly to top of main content
@@ -50,7 +64,6 @@ async function loadTestSuite() {
     testSuite = await res.json();
 
     const gapsGrid = document.getElementById('gaps-grid');
-    // If the grid is empty or has fewer than 25 items, populate it dynamically with proper classes
     if (gapsGrid && (!gapsGrid.children || gapsGrid.children.length === 0) && testSuite.unanswerable_questions) {
       gapsGrid.innerHTML = '';
       testSuite.unanswerable_questions.forEach(item => {
@@ -65,7 +78,7 @@ async function loadTestSuite() {
             <h4 class="item-question">${escapeHtml(item.question)}</h4>
             <p class="item-desc">${escapeHtml(item.reason)}</p>
           </div>
-          <button onclick="runDirectQuery('${escapeQuotes(item.question)}')" class="action-btn btn-rose">
+          <button type="button" onclick="runDirectQuery('${escapeQuotes(item.question)}')" class="action-btn btn-rose">
             Verify Policy Gap ➔
           </button>
         `;
@@ -142,13 +155,21 @@ function filterChunks(query) {
   renderChunks(filtered);
 }
 
+// Quick Scenario Trigger by Key
+function runScenario(key) {
+  if (SCENARIOS[key]) {
+    setQuery(SCENARIOS[key]);
+  }
+}
+
 // Quick Scenario Query Handler
 function setQuery(text) {
+  switchTab('qa');
   const input = document.getElementById('query-input');
   if (input) {
     input.value = text;
-    document.getElementById('ask-form').dispatchEvent(new Event('submit'));
   }
+  handleAsk();
 }
 
 // Direct Trigger from Conflict Matrix or Policy Gaps
@@ -157,16 +178,16 @@ function runDirectQuery(text) {
   const input = document.getElementById('query-input');
   if (input) {
     input.value = text;
-    document.getElementById('ask-form').dispatchEvent(new Event('submit'));
   }
+  handleAsk();
 }
 
 // Form Submission Handler
 async function handleAsk(event) {
-  if (event) event.preventDefault();
+  if (event && event.preventDefault) event.preventDefault();
 
   const input = document.getElementById('query-input');
-  const query = input.value.trim();
+  const query = input ? input.value.trim() : '';
   if (!query) return;
 
   const emptyState = document.getElementById('qa-empty');
@@ -174,9 +195,18 @@ async function handleAsk(event) {
   const resultsGrid = document.getElementById('qa-results');
   const submitBtn = document.getElementById('submit-btn');
 
-  if (emptyState) emptyState.classList.add('hidden');
-  if (resultsGrid) resultsGrid.classList.add('hidden');
-  if (loadingState) loadingState.classList.remove('hidden');
+  if (emptyState) {
+    emptyState.style.display = 'none';
+    emptyState.classList.add('hidden');
+  }
+  if (resultsGrid) {
+    resultsGrid.style.display = 'none';
+    resultsGrid.classList.add('hidden');
+  }
+  if (loadingState) {
+    loadingState.style.display = 'block';
+    loadingState.classList.remove('hidden');
+  }
   if (submitBtn) submitBtn.disabled = true;
 
   try {
@@ -196,8 +226,14 @@ async function handleAsk(event) {
   } catch (err) {
     alert(`Error: ${err.message}`);
   } finally {
-    if (loadingState) loadingState.classList.add('hidden');
-    if (resultsGrid) resultsGrid.classList.remove('hidden');
+    if (loadingState) {
+      loadingState.style.display = 'none';
+      loadingState.classList.add('hidden');
+    }
+    if (resultsGrid) {
+      resultsGrid.style.display = 'grid';
+      resultsGrid.classList.remove('hidden');
+    }
     if (submitBtn) submitBtn.disabled = false;
   }
 }
@@ -220,8 +256,14 @@ function renderAnswerResponse(data) {
   if (citationsBadge) citationsBadge.textContent = `${data.citations.length} Citation${data.citations.length === 1 ? '' : 's'}`;
 
   // Reset conditional callouts
-  if (conflictBox) conflictBox.classList.add('hidden');
-  if (silenceBox) silenceBox.classList.add('hidden');
+  if (conflictBox) {
+    conflictBox.style.display = 'none';
+    conflictBox.classList.add('hidden');
+  }
+  if (silenceBox) {
+    silenceBox.style.display = 'none';
+    silenceBox.classList.add('hidden');
+  }
 
   // Customize based on 3 Response Types:
   if (data.type === 'conflict') {
@@ -235,6 +277,7 @@ function renderAnswerResponse(data) {
     }
 
     if (data.conflict && conflictBox) {
+      conflictBox.style.display = 'block';
       conflictBox.classList.remove('hidden');
       const topicEl = document.getElementById('conflict-topic');
       const expEl = document.getElementById('conflict-explanation');
@@ -268,6 +311,7 @@ function renderAnswerResponse(data) {
     }
 
     if (silenceBox) {
+      silenceBox.style.display = 'block';
       silenceBox.classList.remove('hidden');
       const reasonEl = document.getElementById('silence-reason');
       if (reasonEl) reasonEl.textContent = data.reasoning || "The institutional documents maintain silence and do not establish a policy for this query.";
@@ -340,7 +384,10 @@ async function runLiveBenchmark() {
   const tableBody = document.getElementById('bm-table-body');
 
   if (btn) btn.disabled = true;
-  if (progressWrap) progressWrap.classList.remove('hidden');
+  if (progressWrap) {
+    progressWrap.style.display = 'block';
+    progressWrap.classList.remove('hidden');
+  }
   if (progressBar) progressBar.style.width = '35%';
   if (progressText) progressText.textContent = '35%';
 

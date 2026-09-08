@@ -764,19 +764,19 @@
         <div class="chips-container">
           <span class="chips-label">Frequent Verification Scenarios:</span>
           <div class="chips-row">
-            <button onclick="setQuery('What happens if my attendance is 68% due to hospitalization?')" class="chip-btn chip-amber">
+            <button type="button" onclick="runScenario('attendance')" class="chip-btn chip-amber">
               ⚠️ Conflict: 75% Mandatory vs 65% Medical vs 50% Dean Waiver
             </button>
-            <button onclick="setQuery('If I withdraw from a course on day 10 of the semester, what refund percentage do I get?')" class="chip-btn chip-amber">
+            <button type="button" onclick="runScenario('refund')" class="chip-btn chip-amber">
               ⚠️ Conflict: 80% Tuition Refund vs 0% Forfeiture
             </button>
-            <button onclick="setQuery('Can final year students work in the departmental research labs after 10 PM?')" class="chip-btn chip-amber">
+            <button type="button" onclick="runScenario('curfew')" class="chip-btn chip-amber">
               ⚠️ Conflict: 10 PM Gate Lock vs 24/7 Lab Access
             </button>
-            <button onclick="setQuery('What happens if I miss the end-semester examination because of my sibling\'s wedding?')" class="chip-btn chip-rose">
+            <button type="button" onclick="runScenario('wedding')" class="chip-btn chip-rose">
               🛡️ Policy Gap: Sibling Wedding Absence (Silent)
             </button>
-            <button onclick="setQuery('What letter grades are used and what grade points correspond to them?')" class="chip-btn chip-cyan">
+            <button type="button" onclick="runScenario('grading')" class="chip-btn chip-cyan">
               🎯 Standard: 10-Point Grading Scale & CGPA
             </button>
           </div>
@@ -784,14 +784,14 @@
       </div>
 
       <!-- Loading State -->
-      <div id="qa-loading" style="display: none; padding: 4rem; text-align: center;">
+      <div id="qa-loading" class="hidden" style="padding: 4rem; text-align: center;">
         <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚙️</div>
         <h4 style="color: #fff; font-size: 1.1rem; font-weight: 700;">Cross-Analyzing Rulebook Regulations...</h4>
         <p style="color: #94a3b8; font-size: 0.85rem; margin-top: 0.25rem;">Checking 6,459 words across Academic Regs, Fee Matrix, and Hostel PDF...</p>
       </div>
 
       <!-- Dual-Pane Results Area -->
-      <div id="qa-results" class="dual-pane" style="display: none;">
+      <div id="qa-results" class="dual-pane hidden">
         
         <!-- Left Pane: Verdict & Reasoning -->
         <div>
@@ -816,7 +816,7 @@
             <div id="result-answer" class="verdict-body"></div>
 
             <!-- Conflict Explainer Box -->
-            <div id="conflict-box" class="conflict-callout" style="display: none;">
+            <div id="conflict-box" class="conflict-callout hidden">
               <div class="conflict-title">
                 ⚠️ <span id="conflict-topic">Regulatory Contradiction Identified</span>
               </div>
@@ -825,7 +825,7 @@
             </div>
 
             <!-- Silence Box -->
-            <div id="silence-box" class="conflict-callout" style="display: none; background: rgba(136, 19, 55, 0.2); border-color: rgba(225, 29, 72, 0.6);">
+            <div id="silence-box" class="conflict-callout hidden" style="background: rgba(136, 19, 55, 0.2); border-color: rgba(225, 29, 72, 0.6);">
               <div class="conflict-title" style="color: #fecdd3;">
                 🛡️ Regulatory Silence & Policy Gap Admission
               </div>
@@ -1021,7 +1021,7 @@
               <h4 class="item-question">What happens if I miss the end-semester examination because of my sibling's wedding?</h4>
               <p class="item-desc">Rulebook covers medical hospitalization and sports representation; completely silent on family ceremonies.</p>
             </div>
-            <button onclick="runDirectQuery('What happens if I miss the end-semester examination because of my sibling\'s wedding?')" class="action-btn btn-rose">Verify Policy Gap ➔</button>
+            <button type="button" onclick="runDirectQuery('What happens if I miss the end-semester examination because of my sibling wedding?')" class="action-btn btn-rose">Verify Policy Gap ➔</button>
           </div>
 
           <div class="item-card">
@@ -1066,7 +1066,7 @@
               <h4 class="item-question">How much does the university charge for overnight guest parking in the main campus visitors' lot?</h4>
               <p class="item-desc">Rules cover student vehicle permits; provide no overnight tariff for guest visitor parking.</p>
             </div>
-            <button onclick="runDirectQuery('How much does the university charge for overnight guest parking in the main campus visitors\' lot?')" class="action-btn btn-rose">Verify Policy Gap ➔</button>
+            <button type="button" onclick="runDirectQuery('How much does the university charge for overnight guest parking in the main campus visitors parking lot?')" class="action-btn btn-rose">Verify Policy Gap ➔</button>
           </div>
 
           <div class="item-card">
@@ -1192,7 +1192,7 @@
               <h4 class="item-question">Can day-scholar students sleep over in a friend's hostel room on the eve of a heavy festival exam?</h4>
               <p class="item-desc">Rules govern parental visits in guest lounges; completely silent on peer day-scholar overnight sleepovers.</p>
             </div>
-            <button onclick="runDirectQuery('Can day-scholar students sleep over in a friend\'s hostel room on the eve of a heavy festival exam?')" class="action-btn btn-rose">Verify Policy Gap ➔</button>
+            <button type="button" onclick="runDirectQuery('Can day-scholar students sleep over in a friend hostel room on the eve of a heavy festival exam?')" class="action-btn btn-rose">Verify Policy Gap ➔</button>
           </div>
 
           <div class="item-card">
