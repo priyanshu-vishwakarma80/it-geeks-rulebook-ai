@@ -1,0 +1,97 @@
+/* Custom styles for The Rulebook That Argues With Itself */
+
+.pill-chip {
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #94a3b8;
+  font-size: 0.72rem;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.pill-chip:hover {
+  background-color: #0f172a;
+  border-color: #0284c7;
+  color: #38bdf8;
+  transform: translateY(-1px);
+}
+
+.demo-card {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.badge-tag {
+  font-size: 0.68rem;
+  font-family: ui-monospace, monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.demo-btn {
+  margin-top: 0.75rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.15s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.demo-btn:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+.metric-card {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Citation card styling */
+.citation-card {
+  border-radius: 0.75rem;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  padding: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.citation-card:hover {
+  border-color: #38bdf8;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

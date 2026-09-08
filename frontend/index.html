@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-900 text-slate-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rulebook That Argues With Itself | Apex Institute Q&A Engine</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="h-full flex flex-col bg-slate-950 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+
+  <!-- TOP HEADER -->
+  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+          <i class="fa-solid fa-scale-balanced text-lg text-white"></i>
+        </div>
+        <div>
+          <h1 class="text-base font-bold tracking-tight text-white flex items-center gap-2">
+            The Rulebook That Argues With Itself
+            <span class="text-xs font-mono font-medium px-2 py-0.5 rounded bg-cyan-950 text-cyan-400 border border-cyan-800">IT Geeks Edition</span>
+          </h1>
+          <p class="text-xs text-slate-400">Multi-Modal Corpus Q&A • Contradiction Detection • Silence Admission</p>
+        </div>
+      </div>
+
+      <!-- Live Corpus Stats Pill -->
+      <div class="hidden md:flex items-center space-x-3 text-xs">
+        <div id="stats-badge" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span id="stat-words">Loading words...</span>
+          <span class="text-slate-600">|</span>
+          <span id="stat-docs">3 Documents (MD, CSV, PDF)</span>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="flex space-x-1 p-1 rounded-xl bg-slate-800/80 border border-slate-700/60 text-xs font-medium">
+        <button onclick="switchTab('qa')" id="tab-btn-qa" class="tab-btn px-3 py-1.5 rounded-lg bg-cyan-600 text-white font-semibold transition-all">
+          <i class="fa-solid fa-message mr-1.5"></i> Q&A Engine
+        </button>
+        <button onclick="switchTab('demo')" id="tab-btn-demo" class="tab-btn px-3 py-1.5 rounded-lg text-slate-400 hover:text-slate-200 transition-all">
+          <i class="fa-solid fa-bolt mr-1.5 text-amber-400"></i> 1-Click Demo Queries
+        </button>
+        <button onclick="switchTab('benchmark')" id="tab-btn-benchmark" class="tab-btn px-3 py-1.5 rounded-lg text-slate-400 hover:text-slate-200 transition-all">
+          <i class="fa-solid fa-chart-line mr-1.5 text-emerald-400"></i> Benchmark Suite
+        </button>
+        <button onclick="switchTab('corpus')" id="tab-btn-corpus" class="tab-btn px-3 py-1.5 rounded-lg text-slate-400 hover:text-slate-200 transition-all">
+          <i class="fa-solid fa-book-open mr-1.5 text-indigo-400"></i> Corpus Explorer
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8 flex flex-col">
+
+    <!-- ================= TAB 1: DUAL-PANE Q&A ================= -->
+    <div id="view-qa" class="view-panel flex-1 flex flex-col space-y-6">
+      
+      <!-- Query Input Bar -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl">
+        <form id="ask-form" onsubmit="handleAsk(event)" class="flex flex-col sm:flex-row gap-3">
+          <div class="relative flex-1">
+            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input 
+              type="text" 
+              id="query-input"
+              placeholder="Ask anything (e.g. 'What is the attendance threshold with medical certificate?' or 'Can I keep pets in hostel?')"
+              required
+              class="w-full pl-11 pr-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all"
+            />
+          </div>
+          <button 
+            type="submit" 
+            id="submit-btn"
+            class="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-semibold text-sm shadow-md shadow-cyan-600/30 flex items-center justify-center gap-2 transition-all active:scale-95">
+            <span>Ask Rulebook</span>
+            <i class="fa-solid fa-paper-plane text-xs"></i>
+          </button>
+        </form>
+
+        <!-- Quick Query Pill Suggestions -->
+        <div class="mt-3 flex flex-wrap items-center gap-2 text-xs">
+          <span class="text-slate-500 font-medium">Try testing:</span>
+          <button onclick="setQuery('What happens if my attendance is 68% due to hospitalization?')" class="pill-chip">
+            ⚡ Contradiction: 75% vs 65% Attendance
+          </button>
+          <button onclick="setQuery('If I withdraw from a course on day 10 of the semester, what refund percentage do I get?')" class="pill-chip">
+            ⚡ Contradiction: Fee Refund Bracket
+          </button>
+          <button onclick="setQuery('Can final year students work in the departmental research labs after 10 PM?')" class="pill-chip">
+            ⚡ Contradiction: 10 PM Curfew vs 24/7 Labs
+          </button>
+          <button onclick="setQuery('What happens if I miss the exam because of my sibling\'s wedding?')" class="pill-chip">
+            ❌ Silence: Family Wedding
+          </button>
+          <button onclick="setQuery('What letter grades are used and what grade points correspond to them?')" class="pill-chip">
+            🎯 Standard: Grading Scale
+          </button>
+        </div>
+      </div>
+
+      <!-- Loading State -->
+      <div id="qa-loading" class="hidden py-12 flex flex-col items-center justify-center space-y-3">
+        <div class="w-10 h-10 border-4 border-cyan-500/20 border-t-cyan-500 rounded-full animate-spin"></div>
+        <p class="text-sm text-slate-400">Scanning 6,000+ words across Markdown, CSV, and PDF...</p>
+      </div>
+
+      <!-- DUAL-PANE SIDE-BY-SIDE RESULTS -->
+      <div id="qa-results" class="hidden flex-1 grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- LEFT PANE: ANSWER & ANALYSIS (7 COLS) -->
+        <div class="lg:col-span-7 flex flex-col space-y-5">
+          
+          <!-- Answer Card -->
+          <div id="answer-card" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl relative overflow-hidden">
+            <!-- Dynamic Status Badge -->
+            <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800">
+              <div id="response-type-badge" class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                <!-- Injected via JS -->
+              </div>
+              <div class="text-xs text-slate-400 font-mono">
+                Confidence: <span id="confidence-score" class="font-bold text-slate-200">0.0%</span>
+              </div>
+            </div>
+
+            <!-- Query Repetition -->
+            <div class="mb-3">
+              <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">User Query</span>
+              <p id="result-query" class="text-sm font-medium text-slate-200 mt-0.5 italic"></p>
+            </div>
+
+            <!-- Core Answer Text -->
+            <div class="mb-4">
+              <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">System Verdict</span>
+              <div id="result-answer" class="text-base text-slate-100 mt-1 leading-relaxed font-normal"></div>
+            </div>
+
+            <!-- Contradiction Explainer Box (Shows when CONFLICT) -->
+            <div id="conflict-box" class="hidden mt-4 p-4 rounded-xl bg-amber-950/40 border border-amber-800/80">
+              <div class="flex items-center gap-2 text-amber-400 font-bold text-sm mb-2">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span id="conflict-topic">Contradiction Topic</span>
+              </div>
+              <p id="conflict-explanation" class="text-xs text-amber-200/90 leading-relaxed"></p>
+
+              <!-- Conflicting Clauses Side-by-Side Sub-Grid -->
+              <div id="conflict-clauses-grid" class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+
+            <!-- Silence / Reasoning Explainer Box (Shows when NOT_COVERED) -->
+            <div id="silence-box" class="hidden mt-4 p-4 rounded-xl bg-rose-950/40 border border-rose-800/80">
+              <div class="flex items-center gap-2 text-rose-400 font-bold text-sm mb-1">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <span>Silence Admission & Hallucination Prevention</span>
+              </div>
+              <p id="silence-reason" class="text-xs text-rose-200/90 leading-relaxed"></p>
+            </div>
+
+          </div>
+
+          <!-- Architecture & Decision Note -->
+          <div class="bg-slate-900/50 border border-slate-800/60 rounded-xl p-4 text-xs text-slate-400 flex items-start gap-3">
+            <i class="fa-solid fa-shield-halved text-cyan-400 text-sm mt-0.5"></i>
+            <div>
+              <span class="text-slate-300 font-semibold">Tri-State Strict Decision Engine:</span>
+              <p class="mt-0.5 text-slate-400">
+                Unlike generic LLMs that guess when data is missing or pick one rule arbitrarily when rules clash, 
+                this engine explicitly resolves every query into either <code class="text-emerald-400">ANSWERED</code>, 
+                <code class="text-amber-400">CONFLICT</code>, or <code class="text-rose-400">NOT_COVERED</code>.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT PANE: SIDE-BY-SIDE CITATIONS & SCORES (5 COLS) -->
+        <div class="lg:col-span-5 flex flex-col space-y-4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-sm font-bold text-slate-200 flex items-center gap-2">
+              <i class="fa-solid fa-quote-left text-cyan-400"></i>
+              <span>Passage Citations & Similarity</span>
+            </h3>
+            <span id="citations-count-badge" class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">0 citations</span>
+          </div>
+
+          <p class="text-xs text-slate-400">
+            Passages are displayed side-by-side with exact section references and similarity scores, as mandated by the assignment specification.
+          </p>
+
+          <!-- Scrollable Citations Feed -->
+          <div id="citations-list" class="space-y-3 max-h-[750px] overflow-y-auto pr-1">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Empty State -->
+      <div id="qa-empty" class="py-16 flex flex-col items-center justify-center text-center">
+        <div class="w-16 h-16 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-500 mb-4 shadow-inner">
+          <i class="fa-solid fa-compass text-2xl text-cyan-500"></i>
+        </div>
+        <h3 class="text-base font-semibold text-slate-200">Ask any question or click a sample query above</h3>
+        <p class="text-xs text-slate-400 max-w-md mt-1">
+          Explore how the rulebook resolves standard academic queries, flags contradictory regulations, and gracefully admits when a topic is absent.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ================= TAB 2: 1-CLICK DEMO RUNNER (FOR VIDEO RECORDING) ================= -->
+    <div id="view-demo" class="view-panel hidden flex-1 flex flex-col space-y-6">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-5">
+          <div>
+            <h2 class="text-lg font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-video text-rose-400"></i>
+              <span>Video Submission Helper & 1-Click Test Drawer</span>
+            </h2>
+            <p class="text-xs text-slate-400 mt-1">
+              Click any button below during your video screen recording. The system will automatically execute the query and show the side-by-side results in real time!
+            </p>
+          </div>
+          <span class="text-xs font-mono px-3 py-1 rounded-full bg-rose-950 text-rose-300 border border-rose-800">
+            Ready for Video
+          </span>
+        </div>
+
+        <div class="space-y-6">
+          
+          <!-- Category 1: The 3 Planted Contradictions -->
+          <div>
+            <h3 class="text-sm font-bold text-amber-400 uppercase tracking-wider flex items-center gap-2 mb-3">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>The 3 Planted Contradictions (Expected: CONFLICT)</span>
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <div class="demo-card border-amber-900/60 bg-amber-950/20 hover:bg-amber-950/40">
+                <span class="badge-tag text-amber-400">Contradiction #1</span>
+                <h4 class="font-semibold text-xs text-slate-200 mt-1">Attendance Threshold Clash</h4>
+                <p class="text-[11px] text-slate-400 mt-1">75% strict mandatory vs 65% medical vs 50% Dean waiver.</p>
+                <button onclick="runDemoQuery('What is the minimum attendance required to sit for exams if I have a medical certificate?')" class="demo-btn text-amber-300 bg-amber-900/40 hover:bg-amber-800/60">
+                  <i class="fa-solid fa-play text-[10px]"></i> Test Attendance Clash
+                </button>
+              </div>
+
+              <div class="demo-card border-amber-900/60 bg-amber-950/20 hover:bg-amber-950/40">
+                <span class="badge-tag text-amber-400">Contradiction #2</span>
+                <h4 class="font-semibold text-xs text-slate-200 mt-1">Tuition Refund Policy Clash</h4>
+                <p class="text-[11px] text-slate-400 mt-1">Fee Schedule REF-02 gives 80% refund up to Day 14 vs Regs Sec 6.4 gives 0% after Day 7.</p>
+                <button onclick="runDemoQuery('If I withdraw from a course on day 10 of the semester, what refund percentage do I get?')" class="demo-btn text-amber-300 bg-amber-900/40 hover:bg-amber-800/60">
+                  <i class="fa-solid fa-play text-[10px]"></i> Test Refund Clash
+                </button>
+              </div>
+
+              <div class="demo-card border-amber-900/60 bg-amber-950/20 hover:bg-amber-950/40">
+                <span class="badge-tag text-amber-400">Contradiction #3</span>
+                <h4 class="font-semibold text-xs text-slate-200 mt-1">Night Curfew vs Lab Access</h4>
+                <p class="text-[11px] text-slate-400 mt-1">Hostel Handbook Sec 3.1 10 PM gate lockdown vs Regs Sec 11.2 24/7 Lab Access.</p>
+                <button onclick="runDemoQuery('Can final year students work in the departmental research labs after 10 PM?')" class="demo-btn text-amber-300 bg-amber-900/40 hover:bg-amber-800/60">
+                  <i class="fa-solid fa-play text-[10px]"></i> Test Curfew vs Lab
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Unanswerable Questions (25 Questions) -->
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-sm font-bold text-rose-400 uppercase tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <span>The 25 Unanswerable Questions (Expected: NOT_COVERED)</span>
+              </h3>
+              <span class="text-xs text-slate-500 font-mono">Plausible student questions outside rulebook scope</span>
+            </div>
+            <div id="demo-unanswerable-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 max-h-[400px] overflow-y-auto pr-1">
+              <!-- Populated via JS -->
+            </div>
+          </div>
+
+          <!-- Category 3: Answerable Normal Questions -->
+          <div>
+            <h3 class="text-sm font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-2 mb-3">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Standard Regulatory Queries (Expected: ANSWERED)</span>
+            </h3>
+            <div id="demo-positive-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2.5">
+              <!-- Populated via JS -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TAB 3: BENCHMARK SUITE ================= -->
+    <div id="view-benchmark" class="view-panel hidden flex-1 flex flex-col space-y-6">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-800 pb-5 mb-5">
+          <div>
+            <h2 class="text-lg font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-chart-line text-emerald-400"></i>
+              <span>Automated Test Evaluation Suite</span>
+            </h2>
+            <p class="text-xs text-slate-400 mt-1">
+              Executes the full test matrix (25 silence questions + 6 contradiction variations + 8 answered queries) and measures precision and accuracy.
+            </p>
+          </div>
+          <button 
+            onclick="runLiveBenchmark()" 
+            id="run-benchmark-btn"
+            class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-lg shadow-emerald-600/30 flex items-center gap-2 transition-all">
+            <i class="fa-solid fa-play"></i>
+            <span>Run Complete Benchmark</span>
+          </button>
+        </div>
+
+        <!-- Benchmark Metric Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+          <div class="metric-card">
+            <span class="text-xs text-slate-400 font-semibold">Total Test Cases</span>
+            <span id="bm-total" class="text-2xl font-bold text-white mt-1">39</span>
+          </div>
+          <div class="metric-card">
+            <span class="text-xs text-emerald-400 font-semibold">Passed Tests</span>
+            <span id="bm-passed" class="text-2xl font-bold text-emerald-400 mt-1">—</span>
+          </div>
+          <div class="metric-card">
+            <span class="text-xs text-rose-400 font-semibold">Failed Tests</span>
+            <span id="bm-failed" class="text-2xl font-bold text-rose-400 mt-1">—</span>
+          </div>
+          <div class="metric-card">
+            <span class="text-xs text-cyan-400 font-semibold">Overall Accuracy</span>
+            <span id="bm-accuracy" class="text-2xl font-bold text-cyan-400 mt-1">—%</span>
+          </div>
+        </div>
+
+        <!-- Live Progress Bar -->
+        <div id="bm-progress-wrap" class="hidden mb-6">
+          <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+            <span>Executing automated test suite...</span>
+            <span id="bm-progress-text">0%</span>
+          </div>
+          <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+            <div id="bm-progress-bar" class="h-full bg-emerald-500 transition-all duration-300" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <!-- Benchmark Results Table -->
+        <div class="border border-slate-800 rounded-xl overflow-hidden">
+          <div class="max-h-[500px] overflow-y-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-950 text-slate-400 uppercase font-mono tracking-wider border-b border-slate-800 sticky top-0">
+                <tr>
+                  <th class="py-3 px-4">Test ID</th>
+                  <th class="py-3 px-4">Query</th>
+                  <th class="py-3 px-4">Expected</th>
+                  <th class="py-3 px-4">Predicted</th>
+                  <th class="py-3 px-4">Status</th>
+                </tr>
+              </thead>
+              <tbody id="bm-table-body" class="divide-y divide-slate-800/60 font-sans">
+                <tr>
+                  <td colspan="5" class="py-8 text-center text-slate-500">
+                    Click "Run Complete Benchmark" above to test all queries in real time.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TAB 4: CORPUS EXPLORER ================= -->
+    <div id="view-corpus" class="view-panel hidden flex-1 flex flex-col space-y-6">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
+        <div class="border-b border-slate-800 pb-4 mb-5">
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-book-open text-indigo-400"></i>
+            <span>University Rulebook Corpus Verification</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">
+            Assembles >6,000 words across 3 distinct document formats to fulfill company project guidelines.
+          </p>
+        </div>
+
+        <!-- Document Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-blue-950 text-blue-400 border border-blue-800">MARKDOWN</span>
+                <i class="fa-brands fa-markdown text-slate-400"></i>
+              </div>
+              <h3 class="font-bold text-sm text-slate-200 mt-2">Academic Regulations</h3>
+              <p class="text-xs text-slate-400 mt-1">academic_regulations.md</p>
+              <p class="text-xs text-slate-500 mt-2">Covers degree requirements, grading, attendance, plagiarism, 24/7 lab access.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex justify-between text-xs text-slate-400 font-mono">
+              <span>Words: <strong class="text-slate-200">~3,600</strong></span>
+              <span>Planted: <strong>3 Clashes</strong></span>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">CSV TABLE</span>
+                <i class="fa-solid fa-table text-slate-400"></i>
+              </div>
+              <h3 class="font-bold text-sm text-slate-200 mt-2">Fee Schedule & Deadlines</h3>
+              <p class="text-xs text-slate-400 mt-1">fee_schedule.csv</p>
+              <p class="text-xs text-slate-500 mt-2">Tabular fee deadlines, late payment fines, refund brackets (REF-02 contradiction).</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex justify-between text-xs text-slate-400 font-mono">
+              <span>Words: <strong class="text-slate-200">~1,100</strong></span>
+              <span>Format: <strong>23 Rows</strong></span>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800">PDF HANDBOOK</span>
+                <i class="fa-solid fa-file-pdf text-slate-400"></i>
+              </div>
+              <h3 class="font-bold text-sm text-slate-200 mt-2">Hostel & Residential Life</h3>
+              <p class="text-xs text-slate-400 mt-1">hostel_handbook.pdf</p>
+              <p class="text-xs text-slate-500 mt-2">Allocations, 10 PM curfew lockdown, visitor hours, dining mess regulations.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex justify-between text-xs text-slate-400 font-mono">
+              <span>Words: <strong class="text-slate-200">~1,900</strong></span>
+              <span>Format: <strong>ReportLab PDF</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chunks Search & Viewer -->
+        <div>
+          <h3 class="text-sm font-bold text-slate-300 mb-3 flex items-center justify-between">
+            <span>Indexed Corpus Passages (<span id="total-chunks-span">0</span> chunks)</span>
+            <input 
+              type="text" 
+              id="chunk-filter-input" 
+              oninput="filterChunks(this.value)" 
+              placeholder="Filter chunks by keyword..." 
+              class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:ring-1 focus:ring-cyan-500"
+            />
+          </h3>
+          <div id="chunks-container" class="space-y-2 max-h-[450px] overflow-y-auto pr-1">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800/80 py-3 bg-slate-900 text-center text-xs text-slate-500">
+    Built for IT Geeks Vibe Coding Round • Apex Institute Multi-Modal Rulebook Engine
+  </footer>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
