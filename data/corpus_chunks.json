@@ -1,0 +1,712 @@
+{
+  "metadata": {
+    "total_words": 6459,
+    "total_chunks": 76,
+    "documents": [
+      {
+        "name": "academic_regulations.md",
+        "format": "markdown",
+        "words": 3130,
+        "chunks": 42
+      },
+      {
+        "name": "fee_schedule.csv",
+        "format": "csv_table",
+        "words": 1415,
+        "chunks": 23
+      },
+      {
+        "name": "hostel_handbook.pdf",
+        "format": "pdf",
+        "words": 1914,
+        "chunks": 11
+      }
+    ]
+  },
+  "chunks": [
+    {
+      "chunk_id": "MD-001",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "OFFICIAL UNIVERSITY ACADEMIC REGULATIONS & DEGREE ORDINANCE",
+      "text": "**Document Reference:** AIT/ACAD/REG/2026-V3  \n**Effective Academic Session:** 2025\u20132026 Onwards  \n**Applicability:** All Undergraduate (B.Tech, B.S.), Postgraduate (M.Tech, M.S.), and Doctoral (Ph.D.) Degree Candidates  \n\n---",
+      "full_content": "OFFICIAL UNIVERSITY ACADEMIC REGULATIONS & DEGREE ORDINANCE\n**Document Reference:** AIT/ACAD/REG/2026-V3  \n**Effective Academic Session:** 2025\u20132026 Onwards  \n**Applicability:** All Undergraduate (B.Tech, B.S.), Postgraduate (M.Tech, M.S.), and Doctoral (Ph.D.) Degree Candidates  \n\n---",
+      "word_count": 29
+    },
+    {
+      "chunk_id": "MD-002",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "PREAMBLE & INSTITUTIONAL CHARTER",
+      "text": "The Apex Institute of Technology & Higher Sciences (hereinafter designated as the \"Institute\") establishes these comprehensive Academic Regulations to govern curricular architectures, matriculation standards, course registration guidelines, evaluation schemes, disciplinary codes, and the conferral of academic degrees. Every matriculated student is obligated to familiarize themselves thoroughly with every provision stipulated herein. Ignorance of any clause or administrative amendment published by the Academic Senate shall not be admissible as a defense in any academic, financial, or disciplinary proceeding.\n\n---",
+      "full_content": "PREAMBLE & INSTITUTIONAL CHARTER\nThe Apex Institute of Technology & Higher Sciences (hereinafter designated as the \"Institute\") establishes these comprehensive Academic Regulations to govern curricular architectures, matriculation standards, course registration guidelines, evaluation schemes, disciplinary codes, and the conferral of academic degrees. Every matriculated student is obligated to familiarize themselves thoroughly with every provision stipulated herein. Ignorance of any clause or administrative amendment published by the Academic Senate shall not be admissible as a defense in any academic, financial, or disciplinary proceeding.\n\n---",
+      "word_count": 82
+    },
+    {
+      "chunk_id": "MD-004",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "1.1 Semester Registration Protocol",
+      "text": "1. Every candidate admitted into any program offered by the Institute must complete formal registration at the commencement of each academic semester on the designated dates specified in the Official Academic Calendar published by the Office of the Dean of Academic Affairs.\n2. Semester registration entails:\n   - Settlement of all prescribed semester tuition fees, amenity levies, hostel charges, and institutional dues.\n   - Formal course selection and verification signed by the appointed Departmental Faculty Advisor.\n   - Biometric identity verification at the Central Student Service Center.\n3. Late registration shall be permitted exclusively up to five (5) working days subsequent to the standard registration deadline upon payment of a non-waivable late registration fee of Rs. 3,500. Registration beyond this five-day grace period is strictly barred, resulting in mandatory semester deferral.",
+      "full_content": "1.1 Semester Registration Protocol\n1. Every candidate admitted into any program offered by the Institute must complete formal registration at the commencement of each academic semester on the designated dates specified in the Official Academic Calendar published by the Office of the Dean of Academic Affairs.\n2. Semester registration entails:\n   - Settlement of all prescribed semester tuition fees, amenity levies, hostel charges, and institutional dues.\n   - Formal course selection and verification signed by the appointed Departmental Faculty Advisor.\n   - Biometric identity verification at the Central Student Service Center.\n3. Late registration shall be permitted exclusively up to five (5) working days subsequent to the standard registration deadline upon payment of a non-waivable late registration fee of Rs. 3,500. Registration beyond this five-day grace period is strictly barred, resulting in mandatory semester deferral.",
+      "word_count": 132
+    },
+    {
+      "chunk_id": "MD-005",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "1.2 Maximum and Minimum Credit Loads",
+      "text": "1. In any standard regular semester (Autumn or Spring), a full-time undergraduate student must register for a minimum course workload of sixteen (16) academic credits and cannot exceed twenty-six (26) academic credits, excluding non-credit mandatory induction activities.\n2. Under extraordinary conditions, an undergraduate student maintaining a Cumulative Grade Point Average (CGPA) of 8.50 or higher may petition the Departmental Undergraduate Committee (DUGC) to register for an additional elective course up to an absolute ceiling of thirty (30) credits.\n3. Postgraduate students must enroll in a minimum of twelve (12) credits and a maximum of twenty (20) credits per regular semester.",
+      "full_content": "1.2 Maximum and Minimum Credit Loads\n1. In any standard regular semester (Autumn or Spring), a full-time undergraduate student must register for a minimum course workload of sixteen (16) academic credits and cannot exceed twenty-six (26) academic credits, excluding non-credit mandatory induction activities.\n2. Under extraordinary conditions, an undergraduate student maintaining a Cumulative Grade Point Average (CGPA) of 8.50 or higher may petition the Departmental Undergraduate Committee (DUGC) to register for an additional elective course up to an absolute ceiling of thirty (30) credits.\n3. Postgraduate students must enroll in a minimum of twelve (12) credits and a maximum of twenty (20) credits per regular semester.",
+      "word_count": 106
+    },
+    {
+      "chunk_id": "MD-006",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "1.3 Course Prerequisites and Corequisites",
+      "text": "1. Progression to advanced courses is contingent upon satisfying all prescribed foundational prerequisite courses with a minimum passing grade of 'D' (or 'P' in Pass/No-Credit courses).\n2. A student who has received an 'F' (Fail) or 'I' (Incomplete) grade in a mandatory prerequisite course is categorically prohibited from registering for the subsequent dependent course until the prerequisite has been cleared in a supplementary examination or regular re-registration.\n\n---",
+      "full_content": "1.3 Course Prerequisites and Corequisites\n1. Progression to advanced courses is contingent upon satisfying all prescribed foundational prerequisite courses with a minimum passing grade of 'D' (or 'P' in Pass/No-Credit courses).\n2. A student who has received an 'F' (Fail) or 'I' (Incomplete) grade in a mandatory prerequisite course is categorically prohibited from registering for the subsequent dependent course until the prerequisite has been cleared in a supplementary examination or regular re-registration.\n\n---",
+      "word_count": 73
+    },
+    {
+      "chunk_id": "MD-008",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "2.1 Credit Distribution Model for Bachelor of Technology (B.Tech)",
+      "text": "To qualify for the conferment of the Bachelor of Technology degree, a matriculated candidate must satisfactorily earn a minimum aggregate of one hundred and sixty (160) earned academic credits distributed across the following pedagogical verticals:\n- Basic Sciences Vertical (Mathematics, Physics, Chemistry, Biology): 24 Credits\n- Engineering Sciences Vertical (Computing, Mechanical Workshop, Electronics, Graphics): 22 Credits\n- Humanities, Social Sciences, Management, and Professional Ethics (HSM): 14 Credits\n- Departmental Core Vertical (Discipline-specific Theory and Laboratory Suites): 58 Credits\n- Professional Discipline Electives: 18 Credits\n- Open / Institute-Wide Interdisciplinary Electives: 12 Credits\n- Capstone Senior Design Project (Parts I & II): 12 Credits\n- Mandatory Non-Credit Audit Courses (Constitution of India, Environmental Sciences): Satisfactory Completion",
+      "full_content": "2.1 Credit Distribution Model for Bachelor of Technology (B.Tech)\nTo qualify for the conferment of the Bachelor of Technology degree, a matriculated candidate must satisfactorily earn a minimum aggregate of one hundred and sixty (160) earned academic credits distributed across the following pedagogical verticals:\n- Basic Sciences Vertical (Mathematics, Physics, Chemistry, Biology): 24 Credits\n- Engineering Sciences Vertical (Computing, Mechanical Workshop, Electronics, Graphics): 22 Credits\n- Humanities, Social Sciences, Management, and Professional Ethics (HSM): 14 Credits\n- Departmental Core Vertical (Discipline-specific Theory and Laboratory Suites): 58 Credits\n- Professional Discipline Electives: 18 Credits\n- Open / Institute-Wide Interdisciplinary Electives: 12 Credits\n- Capstone Senior Design Project (Parts I & II): 12 Credits\n- Mandatory Non-Credit Audit Courses (Constitution of India, Environmental Sciences): Satisfactory Completion",
+      "word_count": 124
+    },
+    {
+      "chunk_id": "MD-009",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "2.2 Maximum Duration for Degree Completion",
+      "text": "1. The standard duration for the completion of the B.Tech program is eight (8) consecutive academic semesters (four calendar years).\n2. The maximum allowable time ceiling permitted for an undergraduate student to fulfill all curricular requirements for the award of the B.Tech degree is twelve (12) consecutive semesters (six calendar years) from the initial date of matriculation. Any student failing to complete all credit requirements within this maximum duration shall automatically forfeit their student status and be permanently deregistered.\n3. For M.Tech candidates, the normal duration is four (4) semesters, with an absolute completion ceiling of six (6) semesters (three calendar years).\n\n---",
+      "full_content": "2.2 Maximum Duration for Degree Completion\n1. The standard duration for the completion of the B.Tech program is eight (8) consecutive academic semesters (four calendar years).\n2. The maximum allowable time ceiling permitted for an undergraduate student to fulfill all curricular requirements for the award of the B.Tech degree is twelve (12) consecutive semesters (six calendar years) from the initial date of matriculation. Any student failing to complete all credit requirements within this maximum duration shall automatically forfeit their student status and be permanently deregistered.\n3. For M.Tech candidates, the normal duration is four (4) semesters, with an absolute completion ceiling of six (6) semesters (three calendar years).\n\n---",
+      "word_count": 109
+    },
+    {
+      "chunk_id": "MD-011",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "3.1 Absolute and Relative Letter Grading Scale",
+      "text": "The Institute adopts a 10-point letter grading system based on continuous internal assessments and summative end-semester examinations. The corresponding grade points and descriptive performance indices are tabulated below:\n\n| Letter Grade | Performance Descriptor | Grade Points Assigned | Qualitative Assessment Index |\n| :--- | :--- | :--- | :--- |\n| **A+** | Outstanding | 10.0 | Extraordinary mastery and exceptional analytical depth |\n| **A** | Excellent | 9.0 | Comprehensive conceptual understanding and execution |\n| **B+** | Very Good | 8.0 | High standard of subject competency and problem-solving |\n| **B** | Good | 7.0 | Above average grasp of core curricular concepts |\n| **C+** | Fair | 6.0 | Average subject proficiency meeting basic expectations |\n| **C** | Satisfactory | 5.0 | Minimum acceptable performance standard |\n| **D** | Marginal Passing | 4.0 | Bare threshold passing standard; remediation advised |\n| **F** | Failing Grade | 0.0 | Unsatisfactory mastery; mandatory course repeat required |\n| **I** | Incomplete Grade | 0.0 | Granted only for verified institutional absence |\n| **W** | Formally Withdrawn | \u2014 | Recorded upon sanctioned administrative withdrawal |",
+      "full_content": "3.1 Absolute and Relative Letter Grading Scale\nThe Institute adopts a 10-point letter grading system based on continuous internal assessments and summative end-semester examinations. The corresponding grade points and descriptive performance indices are tabulated below:\n\n| Letter Grade | Performance Descriptor | Grade Points Assigned | Qualitative Assessment Index |\n| :--- | :--- | :--- | :--- |\n| **A+** | Outstanding | 10.0 | Extraordinary mastery and exceptional analytical depth |\n| **A** | Excellent | 9.0 | Comprehensive conceptual understanding and execution |\n| **B+** | Very Good | 8.0 | High standard of subject competency and problem-solving |\n| **B** | Good | 7.0 | Above average grasp of core curricular concepts |\n| **C+** | Fair | 6.0 | Average subject proficiency meeting basic expectations |\n| **C** | Satisfactory | 5.0 | Minimum acceptable performance standard |\n| **D** | Marginal Passing | 4.0 | Bare threshold passing standard; remediation advised |\n| **F** | Failing Grade | 0.0 | Unsatisfactory mastery; mandatory course repeat required |\n| **I** | Incomplete Grade | 0.0 | Granted only for verified institutional absence |\n| **W** | Formally Withdrawn | \u2014 | Recorded upon sanctioned administrative withdrawal |",
+      "word_count": 202
+    },
+    {
+      "chunk_id": "MD-012",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "3.2 Computation of SGPA and CGPA",
+      "text": "1. **Semester Grade Point Average (SGPA)** is calculated at the end of each semester as:\n   \\[ \\text{SGPA} = \\frac{\\sum (C_i \\times G_i)}{\\sum C_i} \\]\n   where \\(C_i\\) denotes the credit weight of the \\(i\\)-th course and \\(G_i\\) is the numerical grade point secured.\n2. **Cumulative Grade Point Average (CGPA)** is the weighted cumulative measure across all completed semesters:\n   \\[ \\text{CGPA} = \\frac{\\sum_{\\text{all}} (C_k \\times G_k)}{\\sum_{\\text{all}} C_k} \\]",
+      "full_content": "3.2 Computation of SGPA and CGPA\n1. **Semester Grade Point Average (SGPA)** is calculated at the end of each semester as:\n   \\[ \\text{SGPA} = \\frac{\\sum (C_i \\times G_i)}{\\sum C_i} \\]\n   where \\(C_i\\) denotes the credit weight of the \\(i\\)-th course and \\(G_i\\) is the numerical grade point secured.\n2. **Cumulative Grade Point Average (CGPA)** is the weighted cumulative measure across all completed semesters:\n   \\[ \\text{CGPA} = \\frac{\\sum_{\\text{all}} (C_k \\times G_k)}{\\sum_{\\text{all}} C_k} \\]",
+      "word_count": 72
+    },
+    {
+      "chunk_id": "MD-013",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "3.3 Dean\u2019s Honors List and Merit Distinctions",
+      "text": "1. An undergraduate student who secures an SGPA of 9.20 or above in any regular semester, while carrying at least twenty (20) registered credits without any 'I' or 'F' grades, shall be cited on the Dean's Academic Honors Roll.\n2. A student graduating with a final CGPA of 8.50 or higher, who has completed the curriculum within the nominal eight semesters without any academic backlogs or disciplinary sanctions, shall have the honor \"Graduated with Distinction\" inscribed upon their final degree scroll.\n\n---",
+      "full_content": "3.3 Dean\u2019s Honors List and Merit Distinctions\n1. An undergraduate student who secures an SGPA of 9.20 or above in any regular semester, while carrying at least twenty (20) registered credits without any 'I' or 'F' grades, shall be cited on the Dean's Academic Honors Roll.\n2. A student graduating with a final CGPA of 8.50 or higher, who has completed the curriculum within the nominal eight semesters without any academic backlogs or disciplinary sanctions, shall have the honor \"Graduated with Distinction\" inscribed upon their final degree scroll.\n\n---",
+      "word_count": 89
+    },
+    {
+      "chunk_id": "MD-015",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "4.1 Philosophy of Academic Engagement",
+      "text": "Regular physical attendance in all lectures, tutorials, laboratory experiments, and seminars is an indispensable tenet of the Institute\u2019s instructional standard. Faculty members are mandated to record attendance through the automated biometric enterprise portal at the commencement of each instructional contact session.",
+      "full_content": "4.1 Philosophy of Academic Engagement\nRegular physical attendance in all lectures, tutorials, laboratory experiments, and seminars is an indispensable tenet of the Institute\u2019s instructional standard. Faculty members are mandated to record attendance through the automated biometric enterprise portal at the commencement of each instructional contact session.",
+      "word_count": 46
+    },
+    {
+      "chunk_id": "MD-016",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "4.2 Mandatory Attendance Standard [CRITICAL INSTRUCTIONAL POLICY]",
+      "text": "A student must maintain a minimum of 75% attendance in each registered course to be eligible to appear for the end-semester examination. Under no circumstances whatsoever shall any condonation or relaxation be granted below this 75% absolute threshold, regardless of medical emergencies, official representations, or administrative discretion. Any candidate accumulating less than 75% physical presence in lectures, tutorials, and practical laboratories shall be automatically awarded an 'F' (Attendance Shortage Fail) grade, barred from the examination hall, and compelled to repeat the course in its entirety during the subsequent summer term or regular academic session.",
+      "full_content": "4.2 Mandatory Attendance Standard [CRITICAL INSTRUCTIONAL POLICY]\nA student must maintain a minimum of 75% attendance in each registered course to be eligible to appear for the end-semester examination. Under no circumstances whatsoever shall any condonation or relaxation be granted below this 75% absolute threshold, regardless of medical emergencies, official representations, or administrative discretion. Any candidate accumulating less than 75% physical presence in lectures, tutorials, and practical laboratories shall be automatically awarded an 'F' (Attendance Shortage Fail) grade, barred from the examination hall, and compelled to repeat the course in its entirety during the subsequent summer term or regular academic session.",
+      "word_count": 101
+    },
+    {
+      "chunk_id": "MD-017",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "4.3 Automated Biometric Attendance Audit",
+      "text": "Attendance tallies are processed weekly by the Central Enterprise Resource Planning (ERP) server. Warning electronic notifications shall be automatically dispatched to the student's institutional email address and parent portal whenever aggregate course attendance drops below 80%.\n\n---",
+      "full_content": "4.3 Automated Biometric Attendance Audit\nAttendance tallies are processed weekly by the Central Enterprise Resource Planning (ERP) server. Warning electronic notifications shall be automatically dispatched to the student's institutional email address and parent portal whenever aggregate course attendance drops below 80%.\n\n---",
+      "word_count": 42
+    },
+    {
+      "chunk_id": "MD-019",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "5.1 Continuous Assessment Weightage Breakdown",
+      "text": "Evaluation in all lecture-based courses is partitioned as follows:\n- Continuous Class Assessments (surprise quizzes, weekly homework sets, term papers): 20%\n- Mid-Semester Examination (administered centrally in the 8th instructional week): 30%\n- Laboratory Performance and Practical Viva Voce (where applicable): 15%\n- Comprehensive End-Semester Examination (conducted over two weeks at semester conclusion): 50% (or 35% in courses paired with dedicated laboratory components).",
+      "full_content": "5.1 Continuous Assessment Weightage Breakdown\nEvaluation in all lecture-based courses is partitioned as follows:\n- Continuous Class Assessments (surprise quizzes, weekly homework sets, term papers): 20%\n- Mid-Semester Examination (administered centrally in the 8th instructional week): 30%\n- Laboratory Performance and Practical Viva Voce (where applicable): 15%\n- Comprehensive End-Semester Examination (conducted over two weeks at semester conclusion): 50% (or 35% in courses paired with dedicated laboratory components).",
+      "word_count": 68
+    },
+    {
+      "chunk_id": "MD-020",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "5.2 Examination Hall Protocols and Security",
+      "text": "1. Candidates must arrive at the examination venue twenty (20) minutes prior to the scheduled paper commencement. No candidate shall be permitted into the exam hall fifteen (15) minutes after the bell rings.\n2. Every examinee must place their official laminated Institute Identity Card on the desk throughout the testing window.\n3. Possession of mobile phones, smartwatches, programmable calculators, Bluetooth earphones, handwritten crib sheets, or unauthorized electronic memory devices inside the examination hall constitutes gross academic malpractice under Section 8.\n\n---",
+      "full_content": "5.2 Examination Hall Protocols and Security\n1. Candidates must arrive at the examination venue twenty (20) minutes prior to the scheduled paper commencement. No candidate shall be permitted into the exam hall fifteen (15) minutes after the bell rings.\n2. Every examinee must place their official laminated Institute Identity Card on the desk throughout the testing window.\n3. Possession of mobile phones, smartwatches, programmable calculators, Bluetooth earphones, handwritten crib sheets, or unauthorized electronic memory devices inside the examination hall constitutes gross academic malpractice under Section 8.\n\n---",
+      "word_count": 87
+    },
+    {
+      "chunk_id": "MD-022",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "6.1 Course Add Period",
+      "text": "A student may add an elective course or switch tutorial sections within five (5) instructional days from the beginning of the semester, provided physical seating capacity is available and written approval is granted by the Course Instructor and Faculty Advisor.",
+      "full_content": "6.1 Course Add Period\nA student may add an elective course or switch tutorial sections within five (5) instructional days from the beginning of the semester, provided physical seating capacity is available and written approval is granted by the Course Instructor and Faculty Advisor.",
+      "word_count": 44
+    },
+    {
+      "chunk_id": "MD-023",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "6.2 Audit Course Option",
+      "text": "1. An undergraduate student in their sixth semester or higher with a CGPA exceeding 7.50 may register for up to one course per semester as an 'Audit' course.\n2. An audited course does not compute toward SGPA or CGPA calculations; however, the student must satisfy at least 75% attendance and complete all internal mid-term examinations to earn an 'AU' notation on the grade sheet.",
+      "full_content": "6.2 Audit Course Option\n1. An undergraduate student in their sixth semester or higher with a CGPA exceeding 7.50 may register for up to one course per semester as an 'Audit' course.\n2. An audited course does not compute toward SGPA or CGPA calculations; however, the student must satisfy at least 75% attendance and complete all internal mid-term examinations to earn an 'AU' notation on the grade sheet.",
+      "word_count": 68
+    },
+    {
+      "chunk_id": "MD-024",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "6.3 Formal Course Withdrawal",
+      "text": "A student encountering severe difficulty may formally petition to withdraw from a single course before the close of the sixth instructional week. The transcript will display a grade notation of 'W', which carries no numerical penalty but incurs no credit towards graduation.",
+      "full_content": "6.3 Formal Course Withdrawal\nA student encountering severe difficulty may formally petition to withdraw from a single course before the close of the sixth instructional week. The transcript will display a grade notation of 'W', which carries no numerical penalty but incurs no credit towards graduation.",
+      "word_count": 46
+    },
+    {
+      "chunk_id": "MD-025",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "6.4 Course Drop Deadlines and Financial Liability [FINANCIAL FORFEITURE CLAUSE]",
+      "text": "A student may drop a course without academic penalty up to Day 7 of instructional classes. If a course is dropped or a student withdraws from any course after Day 7 of the semester, the student incurs full financial liability and 100% fee forfeiture; absolutely zero refund of tuition or lab fees shall be sanctioned. The institute will neither re-credit nor carry over any portion of the assessed course tuition fee toward future academic semesters under any circumstances.\n\n---",
+      "full_content": "6.4 Course Drop Deadlines and Financial Liability [FINANCIAL FORFEITURE CLAUSE]\nA student may drop a course without academic penalty up to Day 7 of instructional classes. If a course is dropped or a student withdraws from any course after Day 7 of the semester, the student incurs full financial liability and 100% fee forfeiture; absolutely zero refund of tuition or lab fees shall be sanctioned. The institute will neither re-credit nor carry over any portion of the assessed course tuition fee toward future academic semesters under any circumstances.\n\n---",
+      "word_count": 89
+    },
+    {
+      "chunk_id": "MD-027",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "7.1 Summer Remedial Term",
+      "text": "1. The Institute conducts an intensive seven-week Summer Remedial Term during June and July for students who have obtained an 'F' grade in mandatory departmental core courses during the preceding academic year.\n2. A student may register for a maximum of two (2) courses during the Summer Term upon remittance of the prescribed summer remedial tuition fee of Rs. 8,000 per course.\n3. The highest grade attainable in any course completed through the Summer Remedial Term is capped at 'B+' (8.0 Grade Points).",
+      "full_content": "7.1 Summer Remedial Term\n1. The Institute conducts an intensive seven-week Summer Remedial Term during June and July for students who have obtained an 'F' grade in mandatory departmental core courses during the preceding academic year.\n2. A student may register for a maximum of two (2) courses during the Summer Term upon remittance of the prescribed summer remedial tuition fee of Rs. 8,000 per course.\n3. The highest grade attainable in any course completed through the Summer Remedial Term is capped at 'B+' (8.0 Grade Points).",
+      "word_count": 87
+    },
+    {
+      "chunk_id": "MD-028",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "7.2 Grade Improvement Examination",
+      "text": "An undergraduate student who has passed all courses but possesses a cumulative CGPA below 6.50 at the end of their seventh semester may apply for a Grade Improvement Examination in up to two theoretical subjects. The better of the two grades obtained shall be retained on the official transcript.\n\n---",
+      "full_content": "7.2 Grade Improvement Examination\nAn undergraduate student who has passed all courses but possesses a cumulative CGPA below 6.50 at the end of their seventh semester may apply for a Grade Improvement Examination in up to two theoretical subjects. The better of the two grades obtained shall be retained on the official transcript.\n\n---",
+      "word_count": 54
+    },
+    {
+      "chunk_id": "MD-030",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "8.1 Plagiarism and Code Copying",
+      "text": "1. The Institute enforces rigorous standards regarding original intellectual synthesis. Any project report, dissertation, literature survey, or software programming assignment submitted for evaluation must undergo automated screening via institutional plagiarism verification software.\n2. A textual or algorithmic similarity index exceeding fifteen percent (15%) excluding standard bibliographic citations shall result in immediate assignment rejection and an automatic 'Zero' score for that component.\n3. Submitting machine-generated text or uncredited code authored by AI models without explicit declaration in project methodology documentation constitutes academic dishonesty.",
+      "full_content": "8.1 Plagiarism and Code Copying\n1. The Institute enforces rigorous standards regarding original intellectual synthesis. Any project report, dissertation, literature survey, or software programming assignment submitted for evaluation must undergo automated screening via institutional plagiarism verification software.\n2. A textual or algorithmic similarity index exceeding fifteen percent (15%) excluding standard bibliographic citations shall result in immediate assignment rejection and an automatic 'Zero' score for that component.\n3. Submitting machine-generated text or uncredited code authored by AI models without explicit declaration in project methodology documentation constitutes academic dishonesty.",
+      "word_count": 87
+    },
+    {
+      "chunk_id": "MD-031",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "8.2 Malpractice Disciplinary Committee (MDC)",
+      "text": "Any student apprehended copying in examinations, possessing illicit reference sheets, assisting peers through whispering or hand signals, or transmitting digital messages shall be summoned before the standing MDC. Penalties imposed by the MDC include:\n- Category 1 (Minor infraction): Cancellation of the specific examination paper and award of 'F' grade.\n- Category 2 (Deliberate cheating or electronic aid): Cancellation of all examinations registered in that semester and mandatory suspension for one academic term.\n- Category 3 (Impersonation, organized leakage, or assault of invigilator): Permanent expulsion from the Institute and referral to civic law enforcement authorities.\n\n---",
+      "full_content": "8.2 Malpractice Disciplinary Committee (MDC)\nAny student apprehended copying in examinations, possessing illicit reference sheets, assisting peers through whispering or hand signals, or transmitting digital messages shall be summoned before the standing MDC. Penalties imposed by the MDC include:\n- Category 1 (Minor infraction): Cancellation of the specific examination paper and award of 'F' grade.\n- Category 2 (Deliberate cheating or electronic aid): Cancellation of all examinations registered in that semester and mandatory suspension for one academic term.\n- Category 3 (Impersonation, organized leakage, or assault of invigilator): Permanent expulsion from the Institute and referral to civic law enforcement authorities.\n\n---",
+      "word_count": 101
+    },
+    {
+      "chunk_id": "MD-033",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "9.1 Medical & Extenuating Circumstances Condonation [ATTENDANCE RELAXATION PROVISION]",
+      "text": "Students who fail to meet the standard attendance criterion due to certified hospitalization or prolonged illness verified by the Chief Medical Officer may be granted condonation of up to 10%, permitting them to sit for examinations with an attendance threshold of not less than 65%. To be eligible for this condonation, the student or their authorized guardian must file the official medical certificate along with discharge summaries at the Academic Dean\u2019s office within seven (7) calendar days of discharge from the medical facility.",
+      "full_content": "9.1 Medical & Extenuating Circumstances Condonation [ATTENDANCE RELAXATION PROVISION]\nStudents who fail to meet the standard attendance criterion due to certified hospitalization or prolonged illness verified by the Chief Medical Officer may be granted condonation of up to 10%, permitting them to sit for examinations with an attendance threshold of not less than 65%. To be eligible for this condonation, the student or their authorized guardian must file the official medical certificate along with discharge summaries at the Academic Dean\u2019s office within seven (7) calendar days of discharge from the medical facility.",
+      "word_count": 92
+    },
+    {
+      "chunk_id": "MD-034",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "9.2 Official Sports, Cultural, and Technical Delegations",
+      "text": "Students selected to represent the Institute or the nation in official inter-university sports tournaments, national youth festivals, or international Olympiads are entitled to duty leave. The authorized days of absence shall be credited toward physical attendance, provided prior written clearance is sanctioned by the Dean of Student Affairs.",
+      "full_content": "9.2 Official Sports, Cultural, and Technical Delegations\nStudents selected to represent the Institute or the nation in official inter-university sports tournaments, national youth festivals, or international Olympiads are entitled to duty leave. The authorized days of absence shall be credited toward physical attendance, provided prior written clearance is sanctioned by the Dean of Student Affairs.",
+      "word_count": 55
+    },
+    {
+      "chunk_id": "MD-035",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "9.3 Physical Disability Accommodations",
+      "text": "Candidates with registered physical, visual, or neurological disabilities certified by an accredited state medical authority are entitled to compensatory extra time of twenty (20) minutes per hour of examination and the provision of an approved non-technical scribe.\n\n---",
+      "full_content": "9.3 Physical Disability Accommodations\nCandidates with registered physical, visual, or neurological disabilities certified by an accredited state medical authority are entitled to compensatory extra time of twenty (20) minutes per hour of examination and the provision of an approved non-technical scribe.\n\n---",
+      "word_count": 42
+    },
+    {
+      "chunk_id": "MD-037",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "10.1 Academic Warning",
+      "text": "A student who secures an SGPA below 5.00 in any given semester shall receive an official Academic Warning Letter issued to their registered guardian. The student is required to consult their Departmental Faculty Advisor weekly.",
+      "full_content": "10.1 Academic Warning\nA student who secures an SGPA below 5.00 in any given semester shall receive an official Academic Warning Letter issued to their registered guardian. The student is required to consult their Departmental Faculty Advisor weekly.",
+      "word_count": 38
+    },
+    {
+      "chunk_id": "MD-038",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "10.2 Academic Probation Criteria",
+      "text": "A student whose Cumulative Grade Point Average (CGPA) falls below 4.50 at the conclusion of any academic year shall be placed on formal Academic Probation for the subsequent semester. A student on Academic Probation:\n- Is strictly barred from participating in inter-collegiate competitions, sports squads, or campus cultural events.\n- Cannot contest any student club or society office-bearer position.\n- Workload is restricted to a maximum of sixteen (16) credits to facilitate academic recovery.",
+      "full_content": "10.2 Academic Probation Criteria\nA student whose Cumulative Grade Point Average (CGPA) falls below 4.50 at the conclusion of any academic year shall be placed on formal Academic Probation for the subsequent semester. A student on Academic Probation:\n- Is strictly barred from participating in inter-collegiate competitions, sports squads, or campus cultural events.\n- Cannot contest any student club or society office-bearer position.\n- Workload is restricted to a maximum of sixteen (16) credits to facilitate academic recovery.",
+      "word_count": 78
+    },
+    {
+      "chunk_id": "MD-039",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "10.3 Termination of Candidature",
+      "text": "A student who remains on Academic Probation for two consecutive semesters and fails to raise their CGPA to at least 4.50 shall have their program candidature permanently terminated.\n\n---",
+      "full_content": "10.3 Termination of Candidature\nA student who remains on Academic Probation for two consecutive semesters and fails to raise their CGPA to at least 4.50 shall have their program candidature permanently terminated.\n\n---",
+      "word_count": 33
+    },
+    {
+      "chunk_id": "MD-041",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "11.1 Senior Capstone Project Administration",
+      "text": "All undergraduate candidates in the seventh and eighth semesters must execute a senior capstone design project under the direct supervision of an allocated faculty guide. The capstone evaluates problem formulation, experimental implementation, engineering rigor, and communication skills.",
+      "full_content": "11.1 Senior Capstone Project Administration\nAll undergraduate candidates in the seventh and eighth semesters must execute a senior capstone design project under the direct supervision of an allocated faculty guide. The capstone evaluates problem formulation, experimental implementation, engineering rigor, and communication skills.",
+      "word_count": 42
+    },
+    {
+      "chunk_id": "MD-042",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "11.2 Senior Capstone Research Lab Access Protocol [LAB ACCESS GUARANTEE]",
+      "text": "All registered final-year undergraduate and postgraduate students working on their capstone thesis or funded departmental research projects are guaranteed continuous 24-hour, seven-days-a-week (24/7) unrestricted physical and biometric access to academic department research laboratories and computational clusters. Departmental security personnel and facilities administrators are explicitly prohibited from barring or interrupting legitimate project researchers engaged in laboratory experimentation during night or weekend hours.\n\n---",
+      "full_content": "11.2 Senior Capstone Research Lab Access Protocol [LAB ACCESS GUARANTEE]\nAll registered final-year undergraduate and postgraduate students working on their capstone thesis or funded departmental research projects are guaranteed continuous 24-hour, seven-days-a-week (24/7) unrestricted physical and biometric access to academic department research laboratories and computational clusters. Departmental security personnel and facilities administrators are explicitly prohibited from barring or interrupting legitimate project researchers engaged in laboratory experimentation during night or weekend hours.\n\n---",
+      "word_count": 72
+    },
+    {
+      "chunk_id": "MD-044",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "12.1 Eligibility for Degree Conferral",
+      "text": "A candidate shall be declared eligible for the award of the B.Tech degree only upon satisfying all of the following requirements:\n1. Accumulation of the mandatory 160 earned academic credits across all specified verticals.\n2. Attainment of a final CGPA of not less than 5.00.\n3. No pending 'F' or 'I' grades in any core, elective, or non-credit mandatory requirement.\n4. Full clearance of all outstanding tuition, library fines, hostel dues, and laboratory breakage dues authenticated by a signed Institutional 'No Dues Certificate'.\n5. No pending disciplinary, malpractice, or anti-ragging penalties recorded against their institutional dossier.",
+      "full_content": "12.1 Eligibility for Degree Conferral\nA candidate shall be declared eligible for the award of the B.Tech degree only upon satisfying all of the following requirements:\n1. Accumulation of the mandatory 160 earned academic credits across all specified verticals.\n2. Attainment of a final CGPA of not less than 5.00.\n3. No pending 'F' or 'I' grades in any core, elective, or non-credit mandatory requirement.\n4. Full clearance of all outstanding tuition, library fines, hostel dues, and laboratory breakage dues authenticated by a signed Institutional 'No Dues Certificate'.\n5. No pending disciplinary, malpractice, or anti-ragging penalties recorded against their institutional dossier.",
+      "word_count": 101
+    },
+    {
+      "chunk_id": "MD-045",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "12.2 Issuance of Provisional Degree and Migration Certificates",
+      "text": "Eligible graduates may obtain their Provisional Degree Certificate and Transcript within fourteen (14) working days after the official declaration of final semester results, pending formal presentation during the Annual Convocation Ceremony.\n\n---",
+      "full_content": "12.2 Issuance of Provisional Degree and Migration Certificates\nEligible graduates may obtain their Provisional Degree Certificate and Transcript within fourteen (14) working days after the official declaration of final semester results, pending formal presentation during the Annual Convocation Ceremony.\n\n---",
+      "word_count": 40
+    },
+    {
+      "chunk_id": "MD-047",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "13.1 Inspection of Answer Scripts",
+      "text": "A student dissatisfied with their evaluation in an end-semester theory examination may submit an application for script viewing within five (5) working days from the result announcement, along with an administrative processing fee of Rs. 500 per course. The student shall inspect their evaluated answer booklet in the presence of the Course Instructor.",
+      "full_content": "13.1 Inspection of Answer Scripts\nA student dissatisfied with their evaluation in an end-semester theory examination may submit an application for script viewing within five (5) working days from the result announcement, along with an administrative processing fee of Rs. 500 per course. The student shall inspect their evaluated answer booklet in the presence of the Course Instructor.",
+      "word_count": 58
+    },
+    {
+      "chunk_id": "MD-048",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "13.2 Formal Re-Evaluation Procedure",
+      "text": "If a computational omission or discrepancy is detected during script inspection, the student may petition for formal independent re-evaluation upon payment of Rs. 1,500. The script shall be evaluated blindly by an external examiner appointed by the Controller of Examinations. The revised mark shall replace the original mark, whether higher or lower.\n\n---",
+      "full_content": "13.2 Formal Re-Evaluation Procedure\nIf a computational omission or discrepancy is detected during script inspection, the student may petition for formal independent re-evaluation upon payment of Rs. 1,500. The script shall be evaluated blindly by an external examiner appointed by the Controller of Examinations. The revised mark shall replace the original mark, whether higher or lower.\n\n---",
+      "word_count": 57
+    },
+    {
+      "chunk_id": "MD-050",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "14.1 Academic Senate Supremacy",
+      "text": "The Academic Senate is the supreme legislative body of the Institute on all academic matters. The Senate reserves the absolute prerogative to alter, amend, repeal, or introduce new clauses to these regulations at its discretion.",
+      "full_content": "14.1 Academic Senate Supremacy\nThe Academic Senate is the supreme legislative body of the Institute on all academic matters. The Senate reserves the absolute prerogative to alter, amend, repeal, or introduce new clauses to these regulations at its discretion.",
+      "word_count": 39
+    },
+    {
+      "chunk_id": "MD-051",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "14.2 Departmental Academic Advisory Committee",
+      "text": "The DAAC assists in curriculum oversight, reviewing course syllabi, approving elective offerings, and evaluating student petitions concerning minor scheduling anomalies.",
+      "full_content": "14.2 Departmental Academic Advisory Committee\nThe DAAC assists in curriculum oversight, reviewing course syllabi, approving elective offerings, and evaluating student petitions concerning minor scheduling anomalies.",
+      "word_count": 25
+    },
+    {
+      "chunk_id": "MD-052",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "14.3 Extraordinary Dean's Discretionary Powers [UNCONDITIONAL WAIVER AUTHORITY]",
+      "text": "Notwithstanding any general regulation or specific clause contained herein, the Dean of Academic Affairs possesses exclusive, final, and unconditional authority to waive attendance deficiencies down to a minimum of 50% for students demonstrating exceptional merit, institutional service, or compassionate grounds. Any written determination or executive decree rendered under this power by the Dean of Academic Affairs shall be binding, non-appealable, and shall supersede all other conflicting provisions, faculty rulings, and departmental determinations throughout the Institute.",
+      "full_content": "14.3 Extraordinary Dean's Discretionary Powers [UNCONDITIONAL WAIVER AUTHORITY]\nNotwithstanding any general regulation or specific clause contained herein, the Dean of Academic Affairs possesses exclusive, final, and unconditional authority to waive attendance deficiencies down to a minimum of 50% for students demonstrating exceptional merit, institutional service, or compassionate grounds. Any written determination or executive decree rendered under this power by the Dean of Academic Affairs shall be binding, non-appealable, and shall supersede all other conflicting provisions, faculty rulings, and departmental determinations throughout the Institute.",
+      "word_count": 83
+    },
+    {
+      "chunk_id": "MD-054",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "15.1 Eligibility for Semester Abroad Programs",
+      "text": "1. Undergraduate students who have completed their fourth semester with a CGPA not lower than 8.00, with no standing academic backlogs or disciplinary records, are eligible to petition for an approved International Semester Abroad Program at a partner university.\n2. The student must submit an official Course Equivalence Matrix pre-approved by the Departmental Undergraduate Committee (DUGC) and endorsed by the Dean of Academic Affairs prior to departure.\n3. Upon return, the student must provide official certified transcripts issued by the partner institution. Transcripts will be translated into letter grades in accordance with the European Credit Transfer and Accumulation System (ECTS) conversion rubric authorized by the Academic Senate.",
+      "full_content": "15.1 Eligibility for Semester Abroad Programs\n1. Undergraduate students who have completed their fourth semester with a CGPA not lower than 8.00, with no standing academic backlogs or disciplinary records, are eligible to petition for an approved International Semester Abroad Program at a partner university.\n2. The student must submit an official Course Equivalence Matrix pre-approved by the Departmental Undergraduate Committee (DUGC) and endorsed by the Dean of Academic Affairs prior to departure.\n3. Upon return, the student must provide official certified transcripts issued by the partner institution. Transcripts will be translated into letter grades in accordance with the European Credit Transfer and Accumulation System (ECTS) conversion rubric authorized by the Academic Senate.",
+      "word_count": 113
+    },
+    {
+      "chunk_id": "MD-055",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "15.2 Financial Obligations During International Study",
+      "text": "1. Tuition fee remittance during the study-abroad semester is governed by bilateral Memoranda of Understanding (MoU). Where reciprocal tuition waivers exist, candidates pay standard tuition to Apex Institute.\n2. In all other arrangements, travel, visas, foreign lodging, health insurance, and local municipal registrations are the sole individual liability of the candidate.\n\n---",
+      "full_content": "15.2 Financial Obligations During International Study\n1. Tuition fee remittance during the study-abroad semester is governed by bilateral Memoranda of Understanding (MoU). Where reciprocal tuition waivers exist, candidates pay standard tuition to Apex Institute.\n2. In all other arrangements, travel, visas, foreign lodging, health insurance, and local municipal registrations are the sole individual liability of the candidate.\n\n---",
+      "word_count": 58
+    },
+    {
+      "chunk_id": "MD-057",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "16.1 Structured Industrial Internship Credits",
+      "text": "1. All undergraduate engineering students are required to undergo a mandatory eight-week industrial internship during the summer recess following their sixth semester.\n2. Satisfactory completion of the internship, authenticated by a designated corporate mentor evaluation report and a formal technical presentation before the departmental evaluation committee, confers four (4) mandatory curricular credits.\n3. Students pursuing off-campus internships during regular instructional semesters must secure prior written sanction from the Head of Department and the Institute Training and Placement Officer (TPO).",
+      "full_content": "16.1 Structured Industrial Internship Credits\n1. All undergraduate engineering students are required to undergo a mandatory eight-week industrial internship during the summer recess following their sixth semester.\n2. Satisfactory completion of the internship, authenticated by a designated corporate mentor evaluation report and a formal technical presentation before the departmental evaluation committee, confers four (4) mandatory curricular credits.\n3. Students pursuing off-campus internships during regular instructional semesters must secure prior written sanction from the Head of Department and the Institute Training and Placement Officer (TPO).",
+      "word_count": 84
+    },
+    {
+      "chunk_id": "MD-058",
+      "document": "academic_regulations.md",
+      "doc_format": "markdown",
+      "section": "16.2 Technology Transfer and Institutional Inventions",
+      "text": "1. Any patentable invention, design registration, or intellectual property developed utilizing institutional laboratories, computing resources, or financial seed grants from the Institute remains the joint intellectual property of the student inventors and the Apex Institute.\n2. Commercial royalties generated from authorized licensing shall be apportioned under a sixty-forty (60:40) ratio in favor of the primary inventors, following deduction of administrative filing expenses.\n\n---\n*(End of Official Academic Regulations - Apex Institute of Technology & Higher Sciences)*",
+      "full_content": "16.2 Technology Transfer and Institutional Inventions\n1. Any patentable invention, design registration, or intellectual property developed utilizing institutional laboratories, computing resources, or financial seed grants from the Institute remains the joint intellectual property of the student inventors and the Apex Institute.\n2. Commercial royalties generated from authorized licensing shall be apportioned under a sixty-forty (60:40) ratio in favor of the primary inventors, following deduction of administrative filing expenses.\n\n---\n*(End of Official Academic Regulations - Apex Institute of Technology & Higher Sciences)*",
+      "word_count": 82
+    },
+    {
+      "chunk_id": "CSV-TUI-UG-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Tuition Fees - Undergraduate B.Tech (TUI-UG-01)",
+      "text": "Clause Code: TUI-UG-01\nCategory: Tuition Fees > Undergraduate B.Tech\nDescription: Regular Semester Tuition Fee per standard semester (Autumn/Spring)\nFee / Amount: Rs. 95000\nDue Date / Deadline: Within 5 calendar days of semester registration\nTerms & Conditions: Non-refundable after formal course drop period. Concessions applicable only under valid National Scholarship portal awards.",
+      "full_content": "Tuition Fees - Undergraduate B.Tech (TUI-UG-01)\nClause Code: TUI-UG-01\nCategory: Tuition Fees > Undergraduate B.Tech\nDescription: Regular Semester Tuition Fee per standard semester (Autumn/Spring)\nFee / Amount: Rs. 95000\nDue Date / Deadline: Within 5 calendar days of semester registration\nTerms & Conditions: Non-refundable after formal course drop period. Concessions applicable only under valid National Scholarship portal awards.",
+      "word_count": 58
+    },
+    {
+      "chunk_id": "CSV-TUI-PG-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Tuition Fees - Postgraduate M.Tech (TUI-PG-01)",
+      "text": "Clause Code: TUI-PG-01\nCategory: Tuition Fees > Postgraduate M.Tech\nDescription: Regular Semester Tuition Fee per standard semester (Autumn/Spring)\nFee / Amount: Rs. 65000\nDue Date / Deadline: Within 5 calendar days of semester registration\nTerms & Conditions: Full waiver applicable for Institute Teaching Assistantship (TA) awardees subject to 8 hours/week service.",
+      "full_content": "Tuition Fees - Postgraduate M.Tech (TUI-PG-01)\nClause Code: TUI-PG-01\nCategory: Tuition Fees > Postgraduate M.Tech\nDescription: Regular Semester Tuition Fee per standard semester (Autumn/Spring)\nFee / Amount: Rs. 65000\nDue Date / Deadline: Within 5 calendar days of semester registration\nTerms & Conditions: Full waiver applicable for Institute Teaching Assistantship (TA) awardees subject to 8 hours/week service.",
+      "word_count": 57
+    },
+    {
+      "chunk_id": "CSV-TUI-DOC-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Tuition Fees - Doctoral Ph.D. (TUI-DOC-01)",
+      "text": "Clause Code: TUI-DOC-01\nCategory: Tuition Fees > Doctoral Ph.D.\nDescription: Per-semester research tuition and doctoral registry fees\nFee / Amount: Rs. 25000\nDue Date / Deadline: Within 5 calendar days of semester registration\nTerms & Conditions: Contingent on ongoing research advisor endorsement and bi-annual doctoral committee clearance.",
+      "full_content": "Tuition Fees - Doctoral Ph.D. (TUI-DOC-01)\nClause Code: TUI-DOC-01\nCategory: Tuition Fees > Doctoral Ph.D.\nDescription: Per-semester research tuition and doctoral registry fees\nFee / Amount: Rs. 25000\nDue Date / Deadline: Within 5 calendar days of semester registration\nTerms & Conditions: Contingent on ongoing research advisor endorsement and bi-annual doctoral committee clearance.",
+      "word_count": 53
+    },
+    {
+      "chunk_id": "CSV-FAC-LIB-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Institutional Facilities - Library & Digital Resources (FAC-LIB-01)",
+      "text": "Clause Code: FAC-LIB-01\nCategory: Institutional Facilities > Library & Digital Resources\nDescription: Annual digital catalog database license and physical repository subscription\nFee / Amount: Rs. 4500\nDue Date / Deadline: At the time of Autumn semester registration\nTerms & Conditions: Grants unlimited access to IEEE Xplore",
+      "full_content": "Institutional Facilities - Library & Digital Resources (FAC-LIB-01)\nClause Code: FAC-LIB-01\nCategory: Institutional Facilities > Library & Digital Resources\nDescription: Annual digital catalog database license and physical repository subscription\nFee / Amount: Rs. 4500\nDue Date / Deadline: At the time of Autumn semester registration\nTerms & Conditions: Grants unlimited access to IEEE Xplore",
+      "word_count": 54
+    },
+    {
+      "chunk_id": "CSV-FAC-COMP-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Institutional Facilities - Computing & High Performance Lab (FAC-COMP-01)",
+      "text": "Clause Code: FAC-COMP-01\nCategory: Institutional Facilities > Computing & High Performance Lab\nDescription: Campus gigabit fiber networking computational server cluster levy\nFee / Amount: Rs. 6000\nDue Date / Deadline: At the time of Autumn semester registration\nTerms & Conditions: Covers cloud compute credits and licensed software suites (MATLAB",
+      "full_content": "Institutional Facilities - Computing & High Performance Lab (FAC-COMP-01)\nClause Code: FAC-COMP-01\nCategory: Institutional Facilities > Computing & High Performance Lab\nDescription: Campus gigabit fiber networking computational server cluster levy\nFee / Amount: Rs. 6000\nDue Date / Deadline: At the time of Autumn semester registration\nTerms & Conditions: Covers cloud compute credits and licensed software suites (MATLAB",
+      "word_count": 58
+    },
+    {
+      "chunk_id": "CSV-FAC-MED-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Institutional Facilities - Student Wellness & Medical Center (FAC-MED-01)",
+      "text": "Clause Code: FAC-MED-01\nCategory: Institutional Facilities > Student Wellness & Medical Center\nDescription: Primary healthcare dispensary 24/7 campus ambulance emergency cover\nFee / Amount: Rs. 3000\nDue Date / Deadline: Annual charge collected in Autumn registration\nTerms & Conditions: Includes free consultation, basic outpatient medications, and cashless emergency stabilization up to Rs. 50,000.",
+      "full_content": "Institutional Facilities - Student Wellness & Medical Center (FAC-MED-01)\nClause Code: FAC-MED-01\nCategory: Institutional Facilities > Student Wellness & Medical Center\nDescription: Primary healthcare dispensary 24/7 campus ambulance emergency cover\nFee / Amount: Rs. 3000\nDue Date / Deadline: Annual charge collected in Autumn registration\nTerms & Conditions: Includes free consultation, basic outpatient medications, and cashless emergency stabilization up to Rs. 50,000.",
+      "word_count": 62
+    },
+    {
+      "chunk_id": "CSV-HST-SGL-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Hostel & Accommodation - Room Rent Single Occupancy (HST-SGL-01)",
+      "text": "Clause Code: HST-SGL-01\nCategory: Hostel & Accommodation > Room Rent Single Occupancy\nDescription: Single air-cooled private residential room in senior blocks\nFee / Amount: Rs. 38000\nDue Date / Deadline: Per semester prior to hostel room key allocation\nTerms & Conditions: Subject to room availability and minimum CGPA criterion of 7.50. Smoking, cooking, and heavy appliances banned.",
+      "full_content": "Hostel & Accommodation - Room Rent Single Occupancy (HST-SGL-01)\nClause Code: HST-SGL-01\nCategory: Hostel & Accommodation > Room Rent Single Occupancy\nDescription: Single air-cooled private residential room in senior blocks\nFee / Amount: Rs. 38000\nDue Date / Deadline: Per semester prior to hostel room key allocation\nTerms & Conditions: Subject to room availability and minimum CGPA criterion of 7.50. Smoking, cooking, and heavy appliances banned.",
+      "word_count": 66
+    },
+    {
+      "chunk_id": "CSV-HST-DBL-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Hostel & Accommodation - Room Rent Double Occupancy (HST-DBL-01)",
+      "text": "Clause Code: HST-DBL-01\nCategory: Hostel & Accommodation > Room Rent Double Occupancy\nDescription: Shared twin occupancy room in standard residential halls\nFee / Amount: Rs. 26000\nDue Date / Deadline: Per semester prior to hostel room key allocation\nTerms & Conditions: Mandatory for all non-local residential students. Includes high-speed Wi-Fi, maintenance, and water heating.",
+      "full_content": "Hostel & Accommodation - Room Rent Double Occupancy (HST-DBL-01)\nClause Code: HST-DBL-01\nCategory: Hostel & Accommodation > Room Rent Double Occupancy\nDescription: Shared twin occupancy room in standard residential halls\nFee / Amount: Rs. 26000\nDue Date / Deadline: Per semester prior to hostel room key allocation\nTerms & Conditions: Mandatory for all non-local residential students. Includes high-speed Wi-Fi, maintenance, and water heating.",
+      "word_count": 63
+    },
+    {
+      "chunk_id": "CSV-MES-STD-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Dining & Catering - Standard Mess Meal Subscription (MES-STD-01)",
+      "text": "Clause Code: MES-STD-01\nCategory: Dining & Catering > Standard Mess Meal Subscription\nDescription: Four meals daily (Breakfast\nFee / Amount: Rs.  Evening Tea\nDue Date / Deadline:  Dinner) in central dining hall\nTerms & Conditions: All Hostel Residents",
+      "full_content": "Dining & Catering - Standard Mess Meal Subscription (MES-STD-01)\nClause Code: MES-STD-01\nCategory: Dining & Catering > Standard Mess Meal Subscription\nDescription: Four meals daily (Breakfast\nFee / Amount: Rs.  Evening Tea\nDue Date / Deadline:  Dinner) in central dining hall\nTerms & Conditions: All Hostel Residents",
+      "word_count": 47
+    },
+    {
+      "chunk_id": "CSV-EXM-REG-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Examination Fees - Regular Semester Examination (EXM-REG-01)",
+      "text": "Clause Code: EXM-REG-01\nCategory: Examination Fees > Regular Semester Examination\nDescription: End-semester evaluation\nFee / Amount: Rs.  and provisional grade card\nDue Date / Deadline: All Registered Candidates\nTerms & Conditions: 2500",
+      "full_content": "Examination Fees - Regular Semester Examination (EXM-REG-01)\nClause Code: EXM-REG-01\nCategory: Examination Fees > Regular Semester Examination\nDescription: End-semester evaluation\nFee / Amount: Rs.  and provisional grade card\nDue Date / Deadline: All Registered Candidates\nTerms & Conditions: 2500",
+      "word_count": 39
+    },
+    {
+      "chunk_id": "CSV-EXM-SUPP-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Examination Fees - Supplementary / Backlog Exam (EXM-SUPP-01)",
+      "text": "Clause Code: EXM-SUPP-01\nCategory: Examination Fees > Supplementary / Backlog Exam\nDescription: Supplementary examination evaluation per registered course backlog\nFee / Amount: Rs. 1200\nDue Date / Deadline: Within 7 days of supplementary exam declaration\nTerms & Conditions: Applicable for re-appearing in theoretical examinations following an 'F' grade in prior semester.",
+      "full_content": "Examination Fees - Supplementary / Backlog Exam (EXM-SUPP-01)\nClause Code: EXM-SUPP-01\nCategory: Examination Fees > Supplementary / Backlog Exam\nDescription: Supplementary examination evaluation per registered course backlog\nFee / Amount: Rs. 1200\nDue Date / Deadline: Within 7 days of supplementary exam declaration\nTerms & Conditions: Applicable for re-appearing in theoretical examinations following an 'F' grade in prior semester.",
+      "word_count": 59
+    },
+    {
+      "chunk_id": "CSV-EXM-TRN-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Examination Fees - Grade Card Re-issue / Transcript (EXM-TRN-01)",
+      "text": "Clause Code: EXM-TRN-01\nCategory: Examination Fees > Grade Card Re-issue / Transcript\nDescription: Issuance of official sealed multi-copy academic transcript transcripts\nFee / Amount: Rs. 1000\nDue Date / Deadline: Upon online submission of transcript petition\nTerms & Conditions: Includes 3 official embossed sealed envelopes. Additional copies chargeable at Rs. 250 per piece.",
+      "full_content": "Examination Fees - Grade Card Re-issue / Transcript (EXM-TRN-01)\nClause Code: EXM-TRN-01\nCategory: Examination Fees > Grade Card Re-issue / Transcript\nDescription: Issuance of official sealed multi-copy academic transcript transcripts\nFee / Amount: Rs. 1000\nDue Date / Deadline: Upon online submission of transcript petition\nTerms & Conditions: Includes 3 official embossed sealed envelopes. Additional copies chargeable at Rs. 250 per piece.",
+      "word_count": 62
+    },
+    {
+      "chunk_id": "CSV-PEN-REG-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Penalties & Late Levies - Late Semester Registration (PEN-REG-01)",
+      "text": "Clause Code: PEN-REG-01\nCategory: Penalties & Late Levies > Late Semester Registration\nDescription: Administrative penalty for course registration during 5-day grace period\nFee / Amount: Rs. 3500\nDue Date / Deadline: Payable immediately at time of delayed registration\nTerms & Conditions: Strictly no registration permitted after the 5th day of semester commencement under any circumstance.",
+      "full_content": "Penalties & Late Levies - Late Semester Registration (PEN-REG-01)\nClause Code: PEN-REG-01\nCategory: Penalties & Late Levies > Late Semester Registration\nDescription: Administrative penalty for course registration during 5-day grace period\nFee / Amount: Rs. 3500\nDue Date / Deadline: Payable immediately at time of delayed registration\nTerms & Conditions: Strictly no registration permitted after the 5th day of semester commencement under any circumstance.",
+      "word_count": 64
+    },
+    {
+      "chunk_id": "CSV-PEN-TUI-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Penalties & Late Levies - Late Tuition Fee Fine Tier 1 (PEN-TUI-01)",
+      "text": "Clause Code: PEN-TUI-01\nCategory: Penalties & Late Levies > Late Tuition Fee Fine Tier 1\nDescription: Late payment surcharge for tuition settled between Day 6 and Day 15\nFee / Amount: Rs. 2000\nDue Date / Deadline: Payable along with pending tuition amount\nTerms & Conditions: Automatic ERP financial hold placed preventing exam hall ticket generation until cleared.",
+      "full_content": "Penalties & Late Levies - Late Tuition Fee Fine Tier 1 (PEN-TUI-01)\nClause Code: PEN-TUI-01\nCategory: Penalties & Late Levies > Late Tuition Fee Fine Tier 1\nDescription: Late payment surcharge for tuition settled between Day 6 and Day 15\nFee / Amount: Rs. 2000\nDue Date / Deadline: Payable along with pending tuition amount\nTerms & Conditions: Automatic ERP financial hold placed preventing exam hall ticket generation until cleared.",
+      "word_count": 70
+    },
+    {
+      "chunk_id": "CSV-PEN-TUI-02",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Penalties & Late Levies - Late Tuition Fee Fine Tier 2 (PEN-TUI-02)",
+      "text": "Clause Code: PEN-TUI-02\nCategory: Penalties & Late Levies > Late Tuition Fee Fine Tier 2\nDescription: Late payment surcharge for tuition settled between Day 16 and Day 30\nFee / Amount: Rs. 5000\nDue Date / Deadline: Payable along with pending tuition amount\nTerms & Conditions: Failure to pay by Day 30 triggers automatic de-registration and administrative semester drop.",
+      "full_content": "Penalties & Late Levies - Late Tuition Fee Fine Tier 2 (PEN-TUI-02)\nClause Code: PEN-TUI-02\nCategory: Penalties & Late Levies > Late Tuition Fee Fine Tier 2\nDescription: Late payment surcharge for tuition settled between Day 16 and Day 30\nFee / Amount: Rs. 5000\nDue Date / Deadline: Payable along with pending tuition amount\nTerms & Conditions: Failure to pay by Day 30 triggers automatic de-registration and administrative semester drop.",
+      "word_count": 71
+    },
+    {
+      "chunk_id": "CSV-PEN-HST-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Penalties & Late Levies - Hostel Curfew Late Entry Fine (PEN-HST-01)",
+      "text": "Clause Code: PEN-HST-01\nCategory: Penalties & Late Levies > Hostel Curfew Late Entry Fine\nDescription: Disciplinary administrative fine for reporting to hostel after 22:00 hours\nFee / Amount: Rs. 1000\nDue Date / Deadline: Payable within 48 hours of security blotter entry\nTerms & Conditions: First offense fine Rs. 1,000; second offense fine Rs. 2,500; third offense results in immediate eviction from campus housing.",
+      "full_content": "Penalties & Late Levies - Hostel Curfew Late Entry Fine (PEN-HST-01)\nClause Code: PEN-HST-01\nCategory: Penalties & Late Levies > Hostel Curfew Late Entry Fine\nDescription: Disciplinary administrative fine for reporting to hostel after 22:00 hours\nFee / Amount: Rs. 1000\nDue Date / Deadline: Payable within 48 hours of security blotter entry\nTerms & Conditions: First offense fine Rs. 1,000; second offense fine Rs. 2,500; third offense results in immediate eviction from campus housing.",
+      "word_count": 75
+    },
+    {
+      "chunk_id": "CSV-PEN-LIB-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Penalties & Late Levies - Library Overdue Book Fine (PEN-LIB-01)",
+      "text": "Clause Code: PEN-LIB-01\nCategory: Penalties & Late Levies > Library Overdue Book Fine\nDescription: Daily penalty for retaining circulating general library books past 14 days\nFee / Amount: Rs. 20\nDue Date / Deadline: Per day per volume after due date\nTerms & Conditions: Maximum fine capped at the replacement cost of the book plus 20% handling surcharge.",
+      "full_content": "Penalties & Late Levies - Library Overdue Book Fine (PEN-LIB-01)\nClause Code: PEN-LIB-01\nCategory: Penalties & Late Levies > Library Overdue Book Fine\nDescription: Daily penalty for retaining circulating general library books past 14 days\nFee / Amount: Rs. 20\nDue Date / Deadline: Per day per volume after due date\nTerms & Conditions: Maximum fine capped at the replacement cost of the book plus 20% handling surcharge.",
+      "word_count": 68
+    },
+    {
+      "chunk_id": "CSV-REF-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Refund Schedules - Pre-Commencement Withdrawal (REF-01)",
+      "text": "Clause Code: REF-01\nCategory: Refund Schedules > Pre-Commencement Withdrawal\nDescription: Full withdrawal submitted prior to formal orientation and class commencement\nFee / Amount: Rs. 90000\nDue Date / Deadline: Before official semester day 1\nTerms & Conditions: Full refund of tuition fee minus a processing administrative deduction of Rs. 1",
+      "full_content": "Refund Schedules - Pre-Commencement Withdrawal (REF-01)\nClause Code: REF-01\nCategory: Refund Schedules > Pre-Commencement Withdrawal\nDescription: Full withdrawal submitted prior to formal orientation and class commencement\nFee / Amount: Rs. 90000\nDue Date / Deadline: Before official semester day 1\nTerms & Conditions: Full refund of tuition fee minus a processing administrative deduction of Rs. 1",
+      "word_count": 56
+    },
+    {
+      "chunk_id": "CSV-REF-02",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Refund Schedules - Early Withdrawal Bracket [CRITICAL CONTRADICTION] (REF-02)",
+      "text": "Clause Code: REF-02\nCategory: Refund Schedules > Early Withdrawal Bracket [CRITICAL CONTRADICTION]\nDescription: Withdrawal submitted between Calendar Day 8 and Calendar Day 14 from semester commencement\nFee / Amount: Rs. 76000\nDue Date / Deadline: Day 8 through Day 14 of semester\nTerms & Conditions: Withdrawal submitted between Calendar Day 8 and Calendar Day 14 from semester commencement shall be entitled to an eighty percent (80%) refund of tuition fees subject only to a deduction of Rs. 2500 administrative processing fee.",
+      "full_content": "Refund Schedules - Early Withdrawal Bracket [CRITICAL CONTRADICTION] (REF-02)\nClause Code: REF-02\nCategory: Refund Schedules > Early Withdrawal Bracket [CRITICAL CONTRADICTION]\nDescription: Withdrawal submitted between Calendar Day 8 and Calendar Day 14 from semester commencement\nFee / Amount: Rs. 76000\nDue Date / Deadline: Day 8 through Day 14 of semester\nTerms & Conditions: Withdrawal submitted between Calendar Day 8 and Calendar Day 14 from semester commencement shall be entitled to an eighty percent (80%) refund of tuition fees subject only to a deduction of Rs. 2500 administrative processing fee.",
+      "word_count": 90
+    },
+    {
+      "chunk_id": "CSV-REF-03",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Refund Schedules - Mid-Semester Withdrawal Bracket (REF-03)",
+      "text": "Clause Code: REF-03\nCategory: Refund Schedules > Mid-Semester Withdrawal Bracket\nDescription: Withdrawal submitted between Calendar Day 15 and Calendar Day 30 from semester start\nFee / Amount: Rs. 47500\nDue Date / Deadline: Day 15 through Day 30 of semester\nTerms & Conditions: Fifty percent (50%) tuition refund granted if withdrawal is backed by certified severe medical distress.",
+      "full_content": "Refund Schedules - Mid-Semester Withdrawal Bracket (REF-03)\nClause Code: REF-03\nCategory: Refund Schedules > Mid-Semester Withdrawal Bracket\nDescription: Withdrawal submitted between Calendar Day 15 and Calendar Day 30 from semester start\nFee / Amount: Rs. 47500\nDue Date / Deadline: Day 15 through Day 30 of semester\nTerms & Conditions: Fifty percent (50%) tuition refund granted if withdrawal is backed by certified severe medical distress.",
+      "word_count": 65
+    },
+    {
+      "chunk_id": "CSV-REF-04",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Refund Schedules - Late Withdrawal Zero Refund (REF-04)",
+      "text": "Clause Code: REF-04\nCategory: Refund Schedules > Late Withdrawal Zero Refund\nDescription: Withdrawal submitted beyond Calendar Day 30 from semester commencement\nFee / Amount: Rs. 0\nDue Date / Deadline: After Day 30 of semester\nTerms & Conditions: Zero percent (0%) refund. Entire tuition fee and facility charges are strictly forfeited by the institution.",
+      "full_content": "Refund Schedules - Late Withdrawal Zero Refund (REF-04)\nClause Code: REF-04\nCategory: Refund Schedules > Late Withdrawal Zero Refund\nDescription: Withdrawal submitted beyond Calendar Day 30 from semester commencement\nFee / Amount: Rs. 0\nDue Date / Deadline: After Day 30 of semester\nTerms & Conditions: Zero percent (0%) refund. Entire tuition fee and facility charges are strictly forfeited by the institution.",
+      "word_count": 62
+    },
+    {
+      "chunk_id": "CSV-DEP-INST-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Security Deposits - Refundable Institutional Caution Deposit (DEP-INST-01)",
+      "text": "Clause Code: DEP-INST-01\nCategory: Security Deposits > Refundable Institutional Caution Deposit\nDescription: One-time refundable deposit against institutional laboratory or library damage\nFee / Amount: Rs. 15000\nDue Date / Deadline: At initial admission matriculation\nTerms & Conditions: Refundable in full upon degree completion and issuance of institutional No-Dues clearance certificate.",
+      "full_content": "Security Deposits - Refundable Institutional Caution Deposit (DEP-INST-01)\nClause Code: DEP-INST-01\nCategory: Security Deposits > Refundable Institutional Caution Deposit\nDescription: One-time refundable deposit against institutional laboratory or library damage\nFee / Amount: Rs. 15000\nDue Date / Deadline: At initial admission matriculation\nTerms & Conditions: Refundable in full upon degree completion and issuance of institutional No-Dues clearance certificate.",
+      "word_count": 58
+    },
+    {
+      "chunk_id": "CSV-DEP-HST-01",
+      "document": "fee_schedule.csv",
+      "doc_format": "csv_table",
+      "section": "Security Deposits - Hostel Security Caution Deposit (DEP-HST-01)",
+      "text": "Clause Code: DEP-HST-01\nCategory: Security Deposits > Hostel Security Caution Deposit\nDescription: One-time refundable deposit against residential furniture and room damage\nFee / Amount: Rs. 10000\nDue Date / Deadline: At initial hostel room possession\nTerms & Conditions: Refundable upon final room vacation and physical inspection by the Hostel Warden.",
+      "full_content": "Security Deposits - Hostel Security Caution Deposit (DEP-HST-01)\nClause Code: DEP-HST-01\nCategory: Security Deposits > Hostel Security Caution Deposit\nDescription: One-time refundable deposit against residential furniture and room damage\nFee / Amount: Rs. 10000\nDue Date / Deadline: At initial hostel room possession\nTerms & Conditions: Refundable upon final room vacation and physical inspection by the Hostel Warden.",
+      "word_count": 58
+    },
+    {
+      "chunk_id": "PDF-000",
+      "document": "hostel_handbook.pdf",
+      "doc_format": "pdf",
+      "section": "APEX INSTITUTE OF TECHNOLOGY & HIGHER SCIENCES",
+      "text": "RESIDENTIAL LIFE & HOSTEL ADMINISTRATION HANDBOOK\nEdition: 2025\u20132026 Academic Year\nOffice of the Dean of Student Affairs & Chief Warden",
+      "full_content": "APEX INSTITUTE OF TECHNOLOGY & HIGHER SCIENCES\nRESIDENTIAL LIFE & HOSTEL ADMINISTRATION HANDBOOK\nEdition: 2025\u20132026 Academic Year\nOffice of the Dean of Student Affairs & Chief Warden",
+      "word_count": 27
+    },
+    {
+      "chunk_id": "PDF-001",
+      "document": "hostel_handbook.pdf",
+      "doc_format": "pdf",
+      "section": "CHAPTER 1: RESIDENTIAL PHILOSOPHY & ADMISSION TO HALLS OF",
+      "text": "RESIDENCE\n1.1 Objective and Residential Community Standards\nThe residential halls at Apex Institute of Technology & Higher Sciences are envisioned as vibrant learning communities\npromoting scholarship, camaraderie, civic responsibility, and mutual respect. Living on campus is a privilege extended to\nenrolled students subject to strict adherence to institutional standards and codes of conduct.\n1.2 Room Allocation and Possession Protocols\n1. Rooms in residential halls are allocated annually by the Chief Warden\u2019s Office based on seniority, academic standing\n(CGPA), and program requirements.\n2. First-year and second-year undergraduate students are mandated to reside in shared double-occupancy rooms in\nJunior Residential Quads (Blocks A through D).\n3. Single-occupancy rooms in Senior Towers (Blocks E, F, and G) are reserved exclusively for third-year, fourth-year, and\npostgraduate students maintaining a minimum CGPA of 7.50 without active disciplinary reprimands.\n4. Room allotment is non-transferable. Subletting, unauthorized swapping of rooms, or sheltering unregistered individuals\nis an offense resulting in immediate cancellation of hostel allotment and forfeiture of the caution deposit.\n5. Inmates must complete a physical inventory check-sheet at the time of taking possession, cataloging the condition of\nfurniture, electrical fittings, window screens, and study carrels.",
+      "full_content": "CHAPTER 1: RESIDENTIAL PHILOSOPHY & ADMISSION TO HALLS OF\nRESIDENCE\n1.1 Objective and Residential Community Standards\nThe residential halls at Apex Institute of Technology & Higher Sciences are envisioned as vibrant learning communities\npromoting scholarship, camaraderie, civic responsibility, and mutual respect. Living on campus is a privilege extended to\nenrolled students subject to strict adherence to institutional standards and codes of conduct.\n1.2 Room Allocation and Possession Protocols\n1. Rooms in residential halls are allocated annually by the Chief Warden\u2019s Office based on seniority, academic standing\n(CGPA), and program requirements.\n2. First-year and second-year undergraduate students are mandated to reside in shared double-occupancy rooms in\nJunior Residential Quads (Blocks A through D).\n3. Single-occupancy rooms in Senior Towers (Blocks E, F, and G) are reserved exclusively for third-year, fourth-year, and\npostgraduate students maintaining a minimum CGPA of 7.50 without active disciplinary reprimands.\n4. Room allotment is non-transferable. Subletting, unauthorized swapping of rooms, or sheltering unregistered individuals\nis an offense resulting in immediate cancellation of hostel allotment and forfeiture of the caution deposit.\n5. Inmates must complete a physical inventory check-sheet at the time of taking possession, cataloging the condition of\nfurniture, electrical fittings, window screens, and study carrels.",
+      "word_count": 198
+    },
+    {
+      "chunk_id": "PDF-002",
+      "document": "hostel_handbook.pdf",
+      "doc_format": "pdf",
+      "section": "CHAPTER 2: RESIDENTIAL CODE OF CONDUCT & COMMUNITY DISCIPLINE",
+      "text": "2.1 General Decorum and Civility\nAll residents must treat fellow residents, administrative wardens, security personnel, mess workers, and maintenance\nstaff with dignity and respect. Verbal abuse, harassment, intimidation, or disruptive behavior will attract severe disciplinary\naction under the Standing Student Disciplinary Ordinance.\n2.2 Anti-Ragging Statutory Declaration\n1. Ragging in any shape, manner, or form\u2014whether physical, psychological, verbal, electronic, or communicative\u2014is\nstrictly prohibited by Supreme Court mandates and Institute regulations.\n2. Any resident found engaging in, abetting, or failing to report incidents of ragging shall face immediate suspension,\nsummary eviction from the hostel, filing of a First Information Report (FIR) with the state police authorities, and permanent\nexpulsion from the Institute.\n2.3 Prohibited Substances and Contraband\n1. The entire residential campus is an absolute Zero-Tolerance Zone for alcoholic beverages, tobacco products, vaping\ndevices, narcotics, psychotropic substances, and flammable fireworks.\n2. Possession, consumption, or storage of liquor, illicit drugs, or drug paraphernalia inside hostel rooms or residential\ncommon areas shall lead to immediate expulsion and criminal prosecution.\n2.4 Electrical Safety and Prohibited Appliances\n1. To prevent electrical overloads and fire hazards, students are strictly prohibited from using high-wattage electrical\nheating appliances inside hostel rooms. This includes electric immersion heaters, hotplates, induction cooktops, room\nheaters, electric kettles exceeding 500W, and toaster ovens.\n2. Permitted electrical devices are limited to laptop chargers, mobile phone chargers, table lamps, and personal hair\ndryers (under 1000W).\n3. Unauthorized appliances will be confiscated on discovery, and an administrative fine of Rs. 3,000 shall be levied per\nconfiscated item.",
+      "full_content": "CHAPTER 2: RESIDENTIAL CODE OF CONDUCT & COMMUNITY DISCIPLINE\n2.1 General Decorum and Civility\nAll residents must treat fellow residents, administrative wardens, security personnel, mess workers, and maintenance\nstaff with dignity and respect. Verbal abuse, harassment, intimidation, or disruptive behavior will attract severe disciplinary\naction under the Standing Student Disciplinary Ordinance.\n2.2 Anti-Ragging Statutory Declaration\n1. Ragging in any shape, manner, or form\u2014whether physical, psychological, verbal, electronic, or communicative\u2014is\nstrictly prohibited by Supreme Court mandates and Institute regulations.\n2. Any resident found engaging in, abetting, or failing to report incidents of ragging shall face immediate suspension,\nsummary eviction from the hostel, filing of a First Information Report (FIR) with the state police authorities, and permanent\nexpulsion from the Institute.\n2.3 Prohibited Substances and Contraband\n1. The entire residential campus is an absolute Zero-Tolerance Zone for alcoholic beverages, tobacco products, vaping\ndevices, narcotics, psychotropic substances, and flammable fireworks.\n2. Possession, consumption, or storage of liquor, illicit drugs, or drug paraphernalia inside hostel rooms or residential\ncommon areas shall lead to immediate expulsion and criminal prosecution.\n2.4 Electrical Safety and Prohibited Appliances\n1. To prevent electrical overloads and fire hazards, students are strictly prohibited from using high-wattage electrical\nheating appliances inside hostel rooms. This includes electric immersion heaters, hotplates, induction cooktops, room\nheaters, electric kettles exceeding 500W, and toaster ovens.\n2. Permitted electrical devices are limited to laptop chargers, mobile phone chargers, table lamps, and personal hair\ndryers (under 1000W).\n3. Unauthorized appliances will be confiscated on discovery, and an administrative fine of Rs. 3,000 shall be levied per\nconfiscated item.",
+      "word_count": 259
+    },
+    {
+      "chunk_id": "PDF-003",
+      "document": "hostel_handbook.pdf",
+      "doc_format": "pdf",
+      "section": "CHAPTER 3: CAMPUS INGRESS, EGRESS, AND NIGHT CURFEW REGULATIONS",
+      "text": "3.1 Mandatory Campus Ingress & Night Curfew [STRICT RESIDENTIAL LOCKDOWN POLICY]\nAll campus entrance gates, library halls, and academic departmental complexes shall be locked strictly at 22:00 hours\n(10:00 PM). All resident students must be physically inside their assigned hostel blocks by 22:00 hours. No student is\npermitted outside their hostel block under any circumstance between 22:00 hours and 06:00 hours. Security supervisors\nat hostel entrances are mandated to log biometric attendance and physically bolt the external iron security gates promptly\nat 22:00 hours. Any resident student arriving at the hostel gate after 22:00 hours shall have their name entered into the\nLate Entry Violation Register, incur an automatic fine of Rs. 1,000 for the first offense, and be referred to the Chief\nWarden. There are absolutely no exceptions to this curfew, regardless of departmental projects, study groups, or\nextracurricular activities.\n3.2 Night Outstation Pass Protocol\n1. Any resident requiring to travel out of town or stay overnight away from the campus must submit a formal Night\nOutstation Pass via the Student ERP Portal at least twenty-four (24) hours in advance.\n2. The Outstation Pass must be authenticated by written parental consent dispatched from the registered parental\ntelephone number or email address on file.\n3. Returning students must punch their biometric clearance at the main gate and deposit their signed slip with the resident\nblock warden.\n3.3 Emergency Medical Exemption\nIn instances of acute medical distress occurring during curfew hours (22:00 to 06:00), the resident on-duty warden must\nbe immediately contacted. The warden will arrange for the campus emergency ambulance to convey the patient to the\nUniversity Medical Center. Under no circumstances should individual students venture unaccompanied past the hostel\ngates during curfew.",
+      "full_content": "CHAPTER 3: CAMPUS INGRESS, EGRESS, AND NIGHT CURFEW REGULATIONS\n3.1 Mandatory Campus Ingress & Night Curfew [STRICT RESIDENTIAL LOCKDOWN POLICY]\nAll campus entrance gates, library halls, and academic departmental complexes shall be locked strictly at 22:00 hours\n(10:00 PM). All resident students must be physically inside their assigned hostel blocks by 22:00 hours. No student is\npermitted outside their hostel block under any circumstance between 22:00 hours and 06:00 hours. Security supervisors\nat hostel entrances are mandated to log biometric attendance and physically bolt the external iron security gates promptly\nat 22:00 hours. Any resident student arriving at the hostel gate after 22:00 hours shall have their name entered into the\nLate Entry Violation Register, incur an automatic fine of Rs. 1,000 for the first offense, and be referred to the Chief\nWarden. There are absolutely no exceptions to this curfew, regardless of departmental projects, study groups, or\nextracurricular activities.\n3.2 Night Outstation Pass Protocol\n1. Any resident requiring to travel out of town or stay overnight away from the campus must submit a formal Night\nOutstation Pass via the Student ERP Portal at least twenty-four (24) hours in advance.\n2. The Outstation Pass must be authenticated by written parental consent dispatched from the registered parental\ntelephone number or email address on file.\n3. Returning students must punch their biometric clearance at the main gate and deposit their signed slip with the resident\nblock warden.\n3.3 Emergency Medical Exemption\nIn instances of acute medical distress occurring during curfew hours (22:00 to 06:00), the resident on-duty warden must\nbe immediately contacted. The warden will arrange for the campus emergency ambulance to convey the patient to the\nUniversity Medical Center. Under no circumstances should individual students venture unaccompanied past the hostel\ngates during curfew.",
+      "word_count": 292
+    },
+    {
+      "chunk_id": "PDF-004",
+      "document": "hostel_handbook.pdf",
+      "doc_format": "pdf",
+      "section": "CHAPTER 4: GUEST AND VISITOR REGULATIONS",
+      "text": "4.1 Permitted Visiting Hours\n1. Parents and authorized immediate guardians registered during matriculation may visit residents in the designated\nHostel Visitor Lounges between 09:00 hours and 18:00 hours on Saturdays, Sundays, and official institute holidays.\n2. Under no circumstances are visitors, parents, or guardians permitted entry into the private corridors or student dorm\nrooms of residential hostels.\n3. Visitors of the opposite gender are strictly restricted to the Ground Floor Administrative Reception and Visitors' Lounge\nand must depart prior to 18:00 hours.\n4.2 Guest House Accommodation\nVisiting parents desiring overnight accommodation on campus may reserve rooms in the Institute Executive Guest House\nvia the Estate Management portal, subject to room availability, payment of standard tariffs (Rs. 2,000 per room per night),\nand advance booking of at least seven (7) days.",
+      "full_content": "CHAPTER 4: GUEST AND VISITOR REGULATIONS\n4.1 Permitted Visiting Hours\n1. Parents and authorized immediate guardians registered during matriculation may visit residents in the designated\nHostel Visitor Lounges between 09:00 hours and 18:00 hours on Saturdays, Sundays, and official institute holidays.\n2. Under no circumstances are visitors, parents, or guardians permitted entry into the private corridors or student dorm\nrooms of residential hostels.\n3. Visitors of the opposite gender are strictly restricted to the Ground Floor Administrative Reception and Visitors' Lounge\nand must depart prior to 18:00 hours.\n4.2 Guest House Accommodation\nVisiting parents desiring overnight accommodation on campus may reserve rooms in the Institute Executive Guest House\nvia the Estate Management portal, subject to room availability, payment of standard tariffs (Rs. 2,000 per room per night),\nand advance booking of at least seven (7) days.",
+      "word_count": 136
+    },
+    {
+      "chunk_id": "PDF-005",
+      "document": "hostel_handbook.pdf",
+      "doc_format": "pdf",
+      "section": "CHAPTER 5: DINING HALL AND MESS ADMINISTRATION",
+      "text": "5.1 Meal Timings and Meal Card Protocols\nThe Central Student Dining Hall operates under the following strict schedule seven days a week:\n- Breakfast: 07:30 hours to 09:30 hours\n- Lunch: 12:00 hours to 14:15 hours\n- Evening High Tea & Snacks: 17:00 hours to 18:15 hours\n- Dinner: 19:30 hours to 21:30 hours\nDining entry is authenticated through the electronic RFID Student Smart ID Card. Meal entitlements are strictly personal\nand non-transferable.\n5.2 Mess Hygiene and Food Delivery Policies\n1. Outside commercial food delivery agents (Swiggy, Zomato, etc.) are strictly prohibited from driving onto the residential\nhostel lanes. All food parcels must be collected by the ordering student at the Main Campus Gate Security Booth prior to\nthe 22:00 hours curfew.\n2. Cooking inside individual hostel rooms is strictly prohibited. Any resident found cooking meals, boiling eggs, or\noperating hotplates in rooms will be penalized under Chapter 2.4.\n3. Taking dining hall crockery, steel plates, glasses, or cutlery out of the central dining hall premises into student hostel\nrooms is deemed theft and will incur a community service penalty.",
+      "full_content": "CHAPTER 5: DINING HALL AND MESS ADMINISTRATION\n5.1 Meal Timings and Meal Card Protocols\nThe Central Student Dining Hall operates under the following strict schedule seven days a week:\n- Breakfast: 07:30 hours to 09:30 hours\n- Lunch: 12:00 hours to 14:15 hours\n- Evening High Tea & Snacks: 17:00 hours to 18:15 hours\n- Dinner: 19:30 hours to 21:30 hours\nDining entry is authenticated through the electronic RFID Student Smart ID Card. Meal entitlements are strictly personal\nand non-transferable.\n5.2 Mess Hygiene and Food Delivery Policies\n1. Outside commercial food delivery agents (Swiggy, Zomato, etc.) are strictly prohibited from driving onto the residential\nhostel lanes. All food parcels must be collected by the ordering student at the Main Campus Gate Security Booth prior to\nthe 22:00 hours curfew.\n2. Cooking inside individual hostel rooms is strictly prohibited. Any resident found cooking meals, boiling eggs, or\noperating hotplates in rooms will be penalized under Chapter 2.4.\n3. Taking dining hall crockery, steel plates, glasses, or cutlery out of the central dining hall premises into student hostel\nrooms is deemed theft and will incur a community service penalty.",
+      "word_count": 187
+    },
+    {
+      "chunk_id": "PDF-006",
+      "document": "hostel_handbook.pdf",
+      "doc_format": "pdf",
+      "section": "CHAPTER 6: MAINTENANCE, DAMAGE LIABILITY, AND CAUTION DEPOSITS",
+      "text": "6.1 Routine Room Maintenance\n1. Housekeeping personnel clean common areas, corridors, washrooms, and stairwells daily between 08:30 hours and\n14:00 hours.\n2. Cleaning of private dorm rooms is the personal responsibility of the individual residents. Rooms must be kept hygienic,\norderly, and free of waste accumulations.\n3. Maintenance requests for plumbing, carpentry, or electrical repairs must be submitted electronically through the\nCampus Facilities Helpdesk ticket system.\n6.2 Property Damage and Group Liability\n1. If institutional furniture, fixtures, ceiling fans, glass windowpanes, or electronic infrastructure in a hostel room suffer\ndamage due to negligence or malice, the repairing cost plus a 25% administrative levy will be deducted from the\noccupants' Hostel Caution Deposit.\n2. In cases where property damage occurs in shared common areas (such as television lounges, elevators, water cooler\nstations, or corridors) and the specific perpetrator cannot be identified, collective group liability shall be levied equally\nacross all residents of that floor or residential wing.",
+      "full_content": "CHAPTER 6: MAINTENANCE, DAMAGE LIABILITY, AND CAUTION DEPOSITS\n6.1 Routine Room Maintenance\n1. Housekeeping personnel clean common areas, corridors, washrooms, and stairwells daily between 08:30 hours and\n14:00 hours.\n2. Cleaning of private dorm rooms is the personal responsibility of the individual residents. Rooms must be kept hygienic,\norderly, and free of waste accumulations.\n3. Maintenance requests for plumbing, carpentry, or electrical repairs must be submitted electronically through the\nCampus Facilities Helpdesk ticket system.\n6.2 Property Damage and Group Liability\n1. If institutional furniture, fixtures, ceiling fans, glass windowpanes, or electronic infrastructure in a hostel room suffer\ndamage due to negligence or malice, the repairing cost plus a 25% administrative levy will be deducted from the\noccupants' Hostel Caution Deposit.\n2. In cases where property damage occurs in shared common areas (such as television lounges, elevators, water cooler\nstations, or corridors) and the specific perpetrator cannot be identified, collective group liability shall be levied equally\nacross all residents of that floor or residential wing.",
+      "word_count": 164
+    },
+    {
+      "chunk_id": "PDF-007",
+      "document": "hostel_handbook.pdf",
+      "doc_format": "pdf",
+      "section": "CHAPTER 7: QUIET HOURS, LEISURE AMENITIES, AND SPORTS FACILITIES",
+      "text": "7.1 Mandatory Quiet Hours\n1. To ensure an environment conducive to intellectual focus and restful sleep, Mandatory Quiet Hours are enforced in all\nresidential hostels between 23:00 hours and 06:00 hours daily.\n2. During Quiet Hours:\n- Volume on audio devices, speakers, or musical instruments must not be audible beyond the physical confines of the\nroom.\n- Gatherings, parties, shouting, or loud discussions in corridors and common stairways are strictly prohibited.\n- Use of hostel Common Television Rooms is suspended after 23:00 hours.\n7.2 Recreational Facilities\nCommon recreation rooms equipped with table tennis boards, foosball tables, and chess sets are open daily from 06:00\nhours to 21:45 hours. All sports gear must be returned to the caretaker desk before the 22:00 hours curfew lockdown.",
+      "full_content": "CHAPTER 7: QUIET HOURS, LEISURE AMENITIES, AND SPORTS FACILITIES\n7.1 Mandatory Quiet Hours\n1. To ensure an environment conducive to intellectual focus and restful sleep, Mandatory Quiet Hours are enforced in all\nresidential hostels between 23:00 hours and 06:00 hours daily.\n2. During Quiet Hours:\n- Volume on audio devices, speakers, or musical instruments must not be audible beyond the physical confines of the\nroom.\n- Gatherings, parties, shouting, or loud discussions in corridors and common stairways are strictly prohibited.\n- Use of hostel Common Television Rooms is suspended after 23:00 hours.\n7.2 Recreational Facilities\nCommon recreation rooms equipped with table tennis boards, foosball tables, and chess sets are open daily from 06:00\nhours to 21:45 hours. All sports gear must be returned to the caretaker desk before the 22:00 hours curfew lockdown.",
+      "word_count": 133
+    },
+    {
+      "chunk_id": "PDF-008",
+      "document": "hostel_handbook.pdf",
+      "doc_format": "pdf",
+      "section": "CHAPTER 8: WARDEN ADVISORY COMMITTEE & DISCIPLINARY SANCTIONS",
+      "text": "8.1 Disciplinary Sanction Scale\nInfractions of this handbook shall be adjudicated by the Hostel Disciplinary Committee (HDC), presided over by the Chief\nWarden. Sanctions range in severity:\n- Level 1 (Minor Violation): Written warning notice and mandatory parent notification.\n- Level 2 (Moderate Violation): Administrative monetary fine ranging from Rs. 1,000 to Rs. 5,000, along with mandatory\ncommunity service (e.g., library catalog assistance).\n- Level 3 (Severe Violation): Suspension of hostel residency for one semester, forfeiture of hostel fees, and formal\nnotation on the student's conduct certificate.\n- Level 4 (Critical / Criminal Breach): Permanent expulsion from all campus housing, academic suspension, and referral\nto law enforcement.\n8.2 Appeals Procedure\nA student penalized by the HDC may lodge a formal appeal to the Dean of Student Affairs within five (5) business days of\nthe sanction notice. The decision of the Dean of Student Affairs shall be final and binding.",
+      "full_content": "CHAPTER 8: WARDEN ADVISORY COMMITTEE & DISCIPLINARY SANCTIONS\n8.1 Disciplinary Sanction Scale\nInfractions of this handbook shall be adjudicated by the Hostel Disciplinary Committee (HDC), presided over by the Chief\nWarden. Sanctions range in severity:\n- Level 1 (Minor Violation): Written warning notice and mandatory parent notification.\n- Level 2 (Moderate Violation): Administrative monetary fine ranging from Rs. 1,000 to Rs. 5,000, along with mandatory\ncommunity service (e.g., library catalog assistance).\n- Level 3 (Severe Violation): Suspension of hostel residency for one semester, forfeiture of hostel fees, and formal\nnotation on the student's conduct certificate.\n- Level 4 (Critical / Criminal Breach): Permanent expulsion from all campus housing, academic suspension, and referral\nto law enforcement.\n8.2 Appeals Procedure\nA student penalized by the HDC may lodge a formal appeal to the Dean of Student Affairs within five (5) business days of\nthe sanction notice. The decision of the Dean of Student Affairs shall be final and binding.",
+      "word_count": 157
+    },
+    {
+      "chunk_id": "PDF-009",
+      "document": "hostel_handbook.pdf",
+      "doc_format": "pdf",
+      "section": "CHAPTER 9: HOSTEL SUSTAINABILITY, RECYCLING & WATER CONSERVATION",
+      "text": "9.1 Environmental Responsibility & Conservation Protocols\nApex Institute of Technology is committed to maintaining a net-zero, environmentally sustainable residential campus.\nResidents are required to actively participate in energy and water conservation initiatives:\n1. All residents must switch off lights, ceiling fans, computer monitors, and exhaust fans whenever exiting dorm rooms or\ncommon study chambers. Defaulting rooms identified during random security sweeps will be subject to a collective green\naudit levy of Rs. 500 per incident.\n2. Water waste through dripping taps or leaking cisterns must be reported within two hours to the plumbing helpdesk. The\nwashing of personal vehicles, motorcycles, or bicycles within residential courtyards using hostel hosepipes is strictly\nforbidden.\n3. Waste segregation at source is mandatory. Residents must utilize designated color-coded collection bins: Green for\norganic food waste, Blue for dry paper and cardboard, and Red for electronic waste or broken metal parts.\n9.2 Solar Water Heating Infrastructure\nHostel blocks are equipped with centralized rooftop solar water heating collectors. Solar hot water supply is scheduled\ndaily from 06:00 hours to 09:30 hours and 18:00 hours to 20:30 hours during winter months. Tampering with roof\nplumbing valves or safety relief fixtures constitutes severe physical vandalism under Chapter 6.",
+      "full_content": "CHAPTER 9: HOSTEL SUSTAINABILITY, RECYCLING & WATER CONSERVATION\n9.1 Environmental Responsibility & Conservation Protocols\nApex Institute of Technology is committed to maintaining a net-zero, environmentally sustainable residential campus.\nResidents are required to actively participate in energy and water conservation initiatives:\n1. All residents must switch off lights, ceiling fans, computer monitors, and exhaust fans whenever exiting dorm rooms or\ncommon study chambers. Defaulting rooms identified during random security sweeps will be subject to a collective green\naudit levy of Rs. 500 per incident.\n2. Water waste through dripping taps or leaking cisterns must be reported within two hours to the plumbing helpdesk. The\nwashing of personal vehicles, motorcycles, or bicycles within residential courtyards using hostel hosepipes is strictly\nforbidden.\n3. Waste segregation at source is mandatory. Residents must utilize designated color-coded collection bins: Green for\norganic food waste, Blue for dry paper and cardboard, and Red for electronic waste or broken metal parts.\n9.2 Solar Water Heating Infrastructure\nHostel blocks are equipped with centralized rooftop solar water heating collectors. Solar hot water supply is scheduled\ndaily from 06:00 hours to 09:30 hours and 18:00 hours to 20:30 hours during winter months. Tampering with roof\nplumbing valves or safety relief fixtures constitutes severe physical vandalism under Chapter 6.",
+      "word_count": 207
+    },
+    {
+      "chunk_id": "PDF-010",
+      "document": "hostel_handbook.pdf",
+      "doc_format": "pdf",
+      "section": "CHAPTER 10: RESIDENT WELFARE COUNCIL & GRIEVANCE REDRESSAL",
+      "text": "10.1 Composition of the Residential Hall Council\nEach residential hostel block maintains an elected Student Welfare Council comprising:\n- Block General Secretary (senior resident)\n- Dining & Mess Committee Convener\n- Sports & Cultural Representative\n- Health, Sanitation, and Green Audit Secretary\nThe Council meets bi-weekly with the Resident Warden to evaluate mess meal quality, review facilities maintenance\ntickets, coordinate intra-hostel tournaments, and propose community improvements.\n10.2 Formal Complaint Filing and Escalation Timeline\n1. Routine maintenance complaints must be resolved within forty-eight (48) hours of electronic ticket logging.\n2. In the event of unresolved grievances, residents may escalate issues sequentially: First to the Resident Warden, then\nto the Chief Warden, and ultimately to the Dean of Student Affairs.\n3. Anonymous, frivolous, or retaliatory complaints directed against fellow students or administrative wardens without\nsubstantiating evidence are strictly prohibited.\n*(End of Official Residential Life & Hostel Administration Handbook)*",
+      "full_content": "CHAPTER 10: RESIDENT WELFARE COUNCIL & GRIEVANCE REDRESSAL\n10.1 Composition of the Residential Hall Council\nEach residential hostel block maintains an elected Student Welfare Council comprising:\n- Block General Secretary (senior resident)\n- Dining & Mess Committee Convener\n- Sports & Cultural Representative\n- Health, Sanitation, and Green Audit Secretary\nThe Council meets bi-weekly with the Resident Warden to evaluate mess meal quality, review facilities maintenance\ntickets, coordinate intra-hostel tournaments, and propose community improvements.\n10.2 Formal Complaint Filing and Escalation Timeline\n1. Routine maintenance complaints must be resolved within forty-eight (48) hours of electronic ticket logging.\n2. In the event of unresolved grievances, residents may escalate issues sequentially: First to the Resident Warden, then\nto the Chief Warden, and ultimately to the Dean of Student Affairs.\n3. Anonymous, frivolous, or retaliatory complaints directed against fellow students or administrative wardens without\nsubstantiating evidence are strictly prohibited.\n*(End of Official Residential Life & Hostel Administration Handbook)*",
+      "word_count": 154
+    }
+  ]
+}

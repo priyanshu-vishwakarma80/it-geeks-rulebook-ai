@@ -1,0 +1,76 @@
+[
+  {
+    "id": "CONTRADICTION-01",
+    "topic": "Minimum Attendance Requirement to Sit for End-Semester Examinations",
+    "description": "Clause 4.2 of Academic Regulations mandates strict 75% attendance with zero exceptions. Clause 9.1 allows 65% with medical exemption. Clause 14.3 empowers the Dean with unconditional unilateral discretion to waive attendance down to 50%.",
+    "clauses": [
+      {
+        "document": "academic_regulations.md",
+        "section": "Section 4.2 - Mandatory Attendance Standard",
+        "quote": "A student must maintain a minimum of 75% attendance in each registered course to be eligible to appear for the end-semester examination. Under no circumstances whatsoever shall any condonation or relaxation be granted below this 75% absolute threshold, regardless of medical emergencies, official representations, or administrative discretion."
+      },
+      {
+        "document": "academic_regulations.md",
+        "section": "Section 9.1 - Medical & Extenuating Circumstances Condonation",
+        "quote": "Students who fail to meet the standard attendance criterion due to certified hospitalization or prolonged illness verified by the Chief Medical Officer may be granted condonation of up to 10%, permitting them to sit for examinations with an attendance threshold of not less than 65%."
+      },
+      {
+        "document": "academic_regulations.md",
+        "section": "Section 14.3 - Extraordinary Dean's Discretionary Powers",
+        "quote": "Notwithstanding any general regulation or specific clause contained herein, the Dean of Academic Affairs possesses exclusive, final, and unconditional authority to waive attendance deficiencies down to a minimum of 50% for students demonstrating exceptional merit, institutional service, or compassionate grounds."
+      }
+    ],
+    "sample_queries": [
+      "What is the minimum attendance required to sit for exams if I have a medical certificate?",
+      "Can the Dean waive my attendance below 75% if I fall sick?",
+      "Is 75% attendance strictly mandatory with no exceptions allowed for exams?",
+      "What happens if my attendance is 68% due to hospitalization?"
+    ]
+  },
+  {
+    "id": "CONTRADICTION-02",
+    "topic": "Tuition Fee Refund on Course Withdrawal",
+    "description": "Fee Schedule (Table Section B) guarantees an 80% tuition fee refund for any withdrawal within 14 calendar days of semester start. Academic Regulations Clause 6.4 strictly specifies that any course dropped or withdrawn after day 7 forfeits 100% of fees with zero refund.",
+    "clauses": [
+      {
+        "document": "fee_schedule.csv",
+        "section": "Fee Schedule - Clause REF-02 (Early Withdrawal Bracket)",
+        "quote": "Withdrawal submitted between Calendar Day 8 and Calendar Day 14 from semester commencement shall be entitled to an eighty percent (80%) refund of tuition fees, subject only to a deduction of Rs. 2,500 administrative processing fee."
+      },
+      {
+        "document": "academic_regulations.md",
+        "section": "Section 6.4 - Course Drop Deadlines and Financial Liability",
+        "quote": "A student may drop a course without academic penalty up to Day 7 of instructional classes. If a course is dropped or a student withdraws from any course after Day 7 of the semester, the student incurs full financial liability and 100% fee forfeiture; absolutely zero refund of tuition or lab fees shall be sanctioned."
+      }
+    ],
+    "sample_queries": [
+      "If I withdraw from a course on day 10 of the semester, what refund percentage do I get?",
+      "What is the refund policy if I drop a course in the second week?",
+      "Can I get an 80% fee refund if I withdraw on day 12?",
+      "Does dropping a course on day 9 forfeit 100% of my fees or do I get a refund?"
+    ]
+  },
+  {
+    "id": "CONTRADICTION-03",
+    "topic": "Night Campus Curfew vs Final Year 24/7 Lab Access",
+    "description": "Hostel & Campus Life Handbook Clause 3.1 mandates that all campus gates and academic building doors lock at 10:00 PM sharp with all resident students confined inside hostels with no exceptions. Academic Regulations Clause 11.2 guarantees 24/7 unrestricted physical access to university research laboratories for all final-year project students.",
+    "clauses": [
+      {
+        "document": "hostel_handbook.pdf",
+        "section": "Section 3.1 - Mandatory Campus Ingress & Night Curfew",
+        "quote": "All campus entrance gates, library halls, and academic departmental complexes shall be locked strictly at 22:00 hours (10:00 PM). All resident students must be physically inside their assigned hostel blocks by 22:00 hours. No student is permitted outside their hostel block under any circumstance between 22:00 hours and 06:00 hours."
+      },
+      {
+        "document": "academic_regulations.md",
+        "section": "Section 11.2 - Senior Capstone Research Lab Access Protocol",
+        "quote": "All registered final-year undergraduate and postgraduate students working on their capstone thesis or funded departmental research projects are guaranteed continuous 24-hour, seven-days-a-week (24/7) unrestricted physical and biometric access to academic department research laboratories and computational clusters."
+      }
+    ],
+    "sample_queries": [
+      "Can final year students work in the departmental research labs after 10 PM?",
+      "Is there a 10 PM curfew for capstone project students working in the computing labs overnight?",
+      "Are campus academic buildings locked at 10 PM even for senior thesis researchers who have 24/7 lab access?",
+      "Can hostel students stay in the research lab past 10 PM?"
+    ]
+  }
+]

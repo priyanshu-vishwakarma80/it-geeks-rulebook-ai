@@ -1,0 +1,152 @@
+[
+  {
+    "id": "UNANSWERABLE-01",
+    "question": "What happens if I miss the end-semester examination because of my sibling's wedding?",
+    "category": "Exam Attendance & Special Leave",
+    "reason": "The rulebook only provides exceptions for verified medical hospitalization and official university sports representation; it is completely silent on family events, weddings, or personal ceremonies."
+  },
+  {
+    "id": "UNANSWERABLE-02",
+    "question": "Can I pay my semester tuition fees using Bitcoin, Ethereum, or cryptocurrency?",
+    "category": "Fee Payment & Financial Modes",
+    "reason": "The fee schedule specifies payment through NEFT, RTGS, Net Banking, and Demand Draft, but contains no mention or policy regarding cryptocurrency or digital token assets."
+  },
+  {
+    "id": "UNANSWERABLE-03",
+    "question": "Are students permitted to keep small pets, such as hamsters or therapy dogs, inside hostel rooms?",
+    "category": "Hostel Life & Animals",
+    "reason": "The hostel handbook covers noise, electrical appliances, visitors, and room allocation, but makes no mention of pet policies or service animal regulations."
+  },
+  {
+    "id": "UNANSWERABLE-04",
+    "question": "What is the procedure to rent a university gym locker for storing sports gear over the weekend?",
+    "category": "Campus Facilities & Sports",
+    "reason": "The regulations describe sports representation attendance quotas, but never specify gym locker rental procedures, lockers availability, or sports complex equipment storage."
+  },
+  {
+    "id": "UNANSWERABLE-05",
+    "question": "Can I transfer credits earned from Coursera, edX, or Harvard online certificates into my degree?",
+    "category": "Curriculum & Credit Transfer",
+    "reason": "Academic regulations define institute elective courses and approved departmental electives, but have no provision or credit policy regarding independent third-party MOOCs or foreign online platforms."
+  },
+  {
+    "id": "UNANSWERABLE-06",
+    "question": "How much does the university charge for overnight guest parking in the main campus visitors' lot?",
+    "category": "Campus Logistics & Parking",
+    "reason": "The campus rules define student vehicle registration and curfew gate entry, but provide no parking tariff, rates, or overnight policies for guest visitor parking."
+  },
+  {
+    "id": "UNANSWERABLE-07",
+    "question": "Can I request vegan and gluten-free custom catering in the hostel dining mess?",
+    "category": "Mess & Dining Facilities",
+    "reason": "Hostel rules outline dining timings, meal coupon cards, and prohibition of outside food delivery during late night, but make no reference to specialized dietary regimes or allergen-specific meal customization."
+  },
+  {
+    "id": "UNANSWERABLE-08",
+    "question": "What is the official procedure for contesting student council president elections?",
+    "category": "Student Governance & Elections",
+    "reason": "The society handbook details club registration and cultural event funding, but contains zero clauses on student union or council electoral protocols, candidacy criteria, or campaigning guidelines."
+  },
+  {
+    "id": "UNANSWERABLE-09",
+    "question": "Can an undergraduate student take a gap year or sabbatical semester to launch a startup venture?",
+    "category": "Academic Leave & Entrepreneurship",
+    "reason": "The regulations address medical leaves of absence and semester repetition due to failure, but maintain complete silence regarding startup incubations, entrepreneurial leaves, or commercial sabbaticals."
+  },
+  {
+    "id": "UNANSWERABLE-10",
+    "question": "Is it permitted to fly commercial camera drones over the campus sports ground for filmmaking?",
+    "category": "Campus Technology & Surveillance",
+    "reason": "The campus guidelines discuss photography in restricted lab areas, but provide no regulation regarding unmanned aerial vehicles (UAVs) or drone operation on university airspace."
+  },
+  {
+    "id": "UNANSWERABLE-11",
+    "question": "What is the security deposit and checkout procedure for borrowing a Kindle e-reader from the library?",
+    "category": "Library & Media Services",
+    "reason": "The library section details borrowing limits for physical textbooks and access to digital research databases, but has no policy or mention of borrowing portable hardware or e-readers."
+  },
+  {
+    "id": "UNANSWERABLE-12",
+    "question": "Can alumni retain access to the campus badminton courts and gym facilities after graduation?",
+    "category": "Alumni Relations & Access",
+    "reason": "The handbook addresses current registered students and authorized residential staff, but does not state alumni recreation privileges or alumni sports membership terms."
+  },
+  {
+    "id": "UNANSWERABLE-13",
+    "question": "How are royalties split if a student develops and sells a mobile application in their dorm room?",
+    "category": "Intellectual Property & Royalties",
+    "reason": "Intellectual property clauses govern university-funded research labs and patent applications filed under departmental grants, but are silent on independent student personal software projects."
+  },
+  {
+    "id": "UNANSWERABLE-14",
+    "question": "Is smoking allowed in designated outdoor perimeter areas of the campus or behind the sports pavilion?",
+    "category": "Campus Health & Conduct",
+    "reason": "The code of conduct specifies zero tolerance for alcohol and narcotics inside hostel rooms, but does not define or designate specific outdoor tobacco smoking zones or campus perimeter smoking rules."
+  },
+  {
+    "id": "UNANSWERABLE-15",
+    "question": "Can I install an electric scooter fast-charger inside my hostel room or balcony?",
+    "category": "Hostel Power & Utilities",
+    "reason": "Hostel regulations ban high-wattage induction stoves and room heaters, but do not address electric vehicle charging or portable battery dock installations."
+  },
+  {
+    "id": "UNANSWERABLE-16",
+    "question": "How can an international student apply for on-campus work-study assistantships in the cafeteria?",
+    "category": "Student Employment & Visas",
+    "reason": "Academic regulations specify graduate teaching and research assistantship stipends, but do not mention undergraduate work-study, cafeteria jobs, or international student visa work limits."
+  },
+  {
+    "id": "UNANSWERABLE-17",
+    "question": "What is the maximum allowed decibel level for acoustic guitar practice inside hostel recreation rooms?",
+    "category": "Noise Regulations",
+    "reason": "Hostel rules mandate quiet hours between 11 PM and 6 AM, but do not provide decibel sound level standards or musical instrument daytime guidelines."
+  },
+  {
+    "id": "UNANSWERABLE-18",
+    "question": "Can I receive Amazon, Flipkart, and Swiggy parcels directly at my hostel room doorstep after curfew?",
+    "category": "Hostel Deliveries & Security",
+    "reason": "Delivery protocols state that parcels must be collected at the main gate security desk during daytime, but fail to state courier retention or delivery policies for off-hours."
+  },
+  {
+    "id": "UNANSWERABLE-19",
+    "question": "What is the fee penalty for returning a 3D printer nozzle damaged during personal hobby printing?",
+    "category": "Makerspace & Equipment",
+    "reason": "Departmental lab rules discuss breakages of standard laboratory glassware and computer peripherals, but makerspace 3D printing equipment replacement penalties are not outlined."
+  },
+  {
+    "id": "UNANSWERABLE-20",
+    "question": "Can day-scholar students sleep over in a friend's hostel room on the eve of a heavy festival exam?",
+    "category": "Guest Policy & Accommodations",
+    "reason": "Hostel guidelines regulate parental overnight stays in university guest houses and registered outside day visitors before 8 PM, but are silent on unauthorized peer day-scholar sleepovers."
+  },
+  {
+    "id": "UNANSWERABLE-21",
+    "question": "How do I claim reimbursement for taxi fare if I represent the college in an inter-college hackathon?",
+    "category": "Travel Claims & Student Competitions",
+    "reason": "The regulations permit attendance condonation for inter-institute technical representation, but do not stipulate any travel reimbursement process, mileage rates, or transit allowances."
+  },
+  {
+    "id": "UNANSWERABLE-22",
+    "question": "Are students allowed to paint murals or stick adhesive posters onto the walls of their dorm rooms?",
+    "category": "Hostel Property & Aesthetics",
+    "reason": "Property damage rules penalize structural breakage and furniture defacement, but do not clarify room wall decoration, temporary adhesive posters, or mural painting permissions."
+  },
+  {
+    "id": "UNANSWERABLE-23",
+    "question": "Can I take a double major in Computer Science and Western Classical Music simultaneously?",
+    "category": "Degree Programs & Dual Degrees",
+    "reason": "The academic handbook defines minor specializations in allied engineering domains and elective tracks, but has no framework or course offering for music majors or fine arts double degrees."
+  },
+  {
+    "id": "UNANSWERABLE-24",
+    "question": "What happens if an end-semester exam paper leaks on Telegram or social media prior to the exam hour?",
+    "category": "Examination Malpractice & Security",
+    "reason": "The malpractice clause details individual in-hall cheating, electronic gadgets in the examination hall, and impersonation, but completely lacks an institutional protocol for mass digital paper leakages or exam cancellations."
+  },
+  {
+    "id": "UNANSWERABLE-25",
+    "question": "Is laundry dry cleaning service subsidized for university sports team jerseys and blazers?",
+    "category": "Campus Services & Athletics",
+    "reason": "Hostel laundry vendor terms state wash cycles for standard bed linens and clothes, but contain no subsidy or separate terms for athletic team dry cleaning."
+  }
+]
