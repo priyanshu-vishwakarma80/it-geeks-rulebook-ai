@@ -1,95 +1,145 @@
-/* Custom styles for The Rulebook That Argues With Itself */
+/* Modern Aesthetics for The Rulebook That Argues With Itself */
 
+body {
+  background-color: #060a13;
+  color: #f1f5f9;
+}
+
+/* Quick Query Pill Chips */
 .pill-chip {
-  padding: 0.25rem 0.6rem;
+  padding: 0.35rem 0.75rem;
   border-radius: 9999px;
-  background-color: #1e293b;
-  border: 1px solid #334155;
-  color: #94a3b8;
-  font-size: 0.72rem;
-  transition: all 0.15s ease-in-out;
+  font-size: 0.73rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  border-width: 1px;
 }
 
-.pill-chip:hover {
-  background-color: #0f172a;
-  border-color: #0284c7;
-  color: #38bdf8;
-  transform: translateY(-1px);
+.pill-amber {
+  background-color: rgba(120, 53, 15, 0.2);
+  border-color: rgba(180, 83, 9, 0.5);
+  color: #fde68a;
+}
+.pill-amber:hover {
+  background-color: rgba(120, 53, 15, 0.4);
+  border-color: #f59e0b;
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 12px -2px rgba(245, 158, 11, 0.25);
 }
 
+.pill-rose {
+  background-color: rgba(136, 19, 55, 0.2);
+  border-color: rgba(190, 18, 60, 0.5);
+  color: #fecdd3;
+}
+.pill-rose:hover {
+  background-color: rgba(136, 19, 55, 0.4);
+  border-color: #f43f5e;
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 12px -2px rgba(244, 63, 94, 0.25);
+}
+
+.pill-cyan {
+  background-color: rgba(8, 51, 68, 0.3);
+  border-color: rgba(14, 116, 144, 0.5);
+  color: #bae6fd;
+}
+.pill-cyan:hover {
+  background-color: rgba(8, 51, 68, 0.5);
+  border-color: #06b6d4;
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 12px -2px rgba(6, 182, 212, 0.25);
+}
+
+/* Demo Cards */
 .demo-card {
-  padding: 1rem;
-  border-radius: 0.75rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
   border-width: 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(8px);
+}
+
+.demo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
 }
 
 .badge-tag {
   font-size: 0.68rem;
-  font-family: ui-monospace, monospace;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .demo-btn {
-  margin-top: 0.75rem;
-  padding: 0.4rem 0.75rem;
-  border-radius: 0.5rem;
-  font-size: 0.72rem;
-  font-weight: 600;
+  margin-top: 1rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  transition: all 0.15s ease;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
   width: 100%;
   justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .demo-btn:hover {
-  filter: brightness(1.15);
+  filter: brightness(1.2);
   transform: translateY(-1px);
 }
 
+/* Metric Cards */
 .metric-card {
-  padding: 1rem;
-  border-radius: 0.75rem;
-  background-color: #020617;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, #0b1120 0%, #030712 100%);
   border: 1px solid #1e293b;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* Citation card styling */
+/* Side-by-Side Citation Card */
 .citation-card {
-  border-radius: 0.75rem;
-  background-color: #0f172a;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, #0b1120 0%, #060a13 100%);
   border: 1px solid #1e293b;
-  padding: 1rem;
-  transition: border-color 0.2s ease;
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .citation-card:hover {
-  border-color: #38bdf8;
+  border-color: #06b6d4;
+  box-shadow: 0 6px 20px -3px rgba(6, 182, 212, 0.15);
+  transform: translateX(2px);
 }
 
-/* Custom scrollbar */
+/* Custom Scrollbars */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #090d16;
+  background: #060a13;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #1e293b;
-  border-radius: 3px;
+  border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
